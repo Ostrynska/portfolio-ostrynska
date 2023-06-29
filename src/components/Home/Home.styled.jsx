@@ -1,33 +1,156 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-import ReactTypingEffect from 'react-typing-effect';
+import Particles from 'react-tsparticles';
 
-import {
-  Container,
-  Row,
-  Col
- } from 'react-bootstrap';
+export const HomeWrapp = styled.div`
+ height: 90vh;
+ justify-content: center;
+ display: flex;
+ padding: 0 80px;
+ gap: 150px;
+ ${'' /* z-index: 1500; */}
+`;
 
-export const HomeWrapp = styled(Container)`
-height: 100%;`
+export const HomeMain = styled.div`
+ height: 100%;
+ align-self: center;
+ max-width: 450px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+`;
 
-export const HomeMain = styled(Row)`
-    height: 100%;
-    text-align: center;`
-
-export const HomeMainCol = styled(Col)`
-    margin: auto;
-    display: block;`
+export const HomeMainCol = styled.div`
+ display: block;
+`;
 
 export const Title = styled.h1`
-    font-size: 4.5rem;
-    font-family: 'Sulphur Point', sans-serif;`
+ font-family: 'Sulphur Point', sans-serif;
+ font-size: 42px;
+ font-weight: 300;
+ line-height: 1.2;
+ margin-bottom: 0.5rem;
+ margin-top: 0;
+`;
 
-export const NextTitle = styled.h2`
-    font-size: 3rem;
-    font-family: 'Julius Sans One', sans-serif;`
+export const PreTitle = styled.h2`
+ font-size: 24px;
+ font-weight: 700;
+ margin-bottom: 50px;
+ line-height: 1.2;
+ margin-top: 0;
+`;
 
-export const Typing = styled(ReactTypingEffect)`
-    font-size: 1.6rem;
-    font-family: 'Sulphur Point', sans-serif;`
+export const Text = styled.p`
+ font-family: 'Raleway', sans-serif;
+`;
 
+export const Particle = styled(Particles)`
+ position: fixed !important;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+`;
+
+export const ButtonWrapp = styled.div`
+ margin-top: 16px;
+ ul {
+  display: flex;
+  gap: 20px;
+ }
+`;
+
+export const Button = styled.a`
+ background: black;
+ border-radius: 0px;
+ border: 2px solid black;
+ color: white;
+ display: inline-block;
+ padding: 4px 19px;
+ overflow: hidden;
+ transition: all .6s cubic-bezier(.55,0,.1,1)
+
+ font-family: 'Raleway', sans-serif;
+ font-size: 1rem;
+ font-weight: 400;
+ line-height: 1.5;
+ text-align: center;
+
+ &:hover {
+  color: black;
+  background: #bb9d55;
+   border: 2px solid #bb9d55;
+   box-shadow: 8px 8px 0px #bb9d55, -8px -8px 0px #bb9d55;
+ }
+
+ ${props =>
+  props.$primary &&
+  css`
+   background: white;
+   color: black;
+
+   &:hover {
+    color: #bb9d55;
+    background: transparent;
+    border: 2px solid #fff;
+   }
+  `}
+
+  ${
+   '' /* div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    transform: translate3d(0px, 90px, 0px);
+     ${props =>
+      props.$one &&
+      css`
+       background-color: #bb9d55;
+       transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+       z-index: -3;
+       z-index: -4;
+       &:hover {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+       }
+      `}
+     ${props =>
+      props.$two &&
+      css`
+       background-color: #bb9d55;
+       transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+       z-index: -3;
+       &:hover {
+        transform: translate3d(0px, 0px, 0px);
+       }
+      `}
+     ${props =>
+      props.$three &&
+      css`
+       background-color: #bb9d55;
+       z-index: -2;
+       transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
+       z-index: -3;
+       &:hover {
+        transform: translate3d(0px, 0px, 0px);
+       }
+      `} */
+  }
+  }
+`;
+
+export const ButtonB = styled(Button)`
+ background: #fff;
+ color: #000;
+`;
+
+export const ImageWrapp = styled.div`
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ padding: 0 20px;
+`;
