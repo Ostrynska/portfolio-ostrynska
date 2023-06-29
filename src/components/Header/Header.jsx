@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { VscGrabber, VscClose } from "react-icons/vsc";
 import { navElements } from "../../contentOption";
-import { HeaderStyled, LogoText, MenuWrapp, MenuBg } from './Header.styled'
+import { HeaderStyled, MenuWrapp, MenuBg, Button, Open, Close } from './Header.styled'
 
 const Header = () => {
   const [isActive, setActive] = useState("false");
@@ -14,14 +13,11 @@ const Header = () => {
   };
   return (
     <HeaderStyled>
-      <div>
-          <LogoText>Ostrynska</LogoText>
-          </div>
           <div>
           {/* <Themetoggle /> */}
-          <button onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
+          <Button onClick={handleToggle}>
+            {!isActive ? <Close /> : <Open />}
+          </Button>
               <MenuWrapp className={!isActive ? 'active' : ''}>
                   {/* <MenuBg> */}
             {navElements.map(({ to, name }) => (
