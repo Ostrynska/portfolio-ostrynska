@@ -1,8 +1,27 @@
 @import-normalize;
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Sulphur+Point:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+
+#root {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.5;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 h1,
@@ -11,12 +30,14 @@ h3,
 h4,
 h5,
 h6,
-p {
+p, button {
   margin: 0;
+  padding: 0;
 }
 
 ul,
 ol {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -25,4 +46,26 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.ovhidden {
+    overflow: hidden;
+}
+
+code {
+  font-family: 'OpenSans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
