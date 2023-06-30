@@ -1,19 +1,46 @@
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 import { VscClose } from 'react-icons/vsc';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
-export const Open = styled(RxHamburgerMenu)`
- width: 2rem;
- height: 2rem;
- &:hover {
-  color: #bb9d55;
- }
-`;
-export const Close = styled(VscClose)`
- width: 2rem;
- height: 2rem;
-`;
+export const BurgerMenuStyles = {
+ bmBurgerButton: {
+  position: 'absolute',
+  width: '32px',
+  height: '32px',
+  left: '32px',
+  top: '32px',
+ },
+ bmBurgerBarsHover: {
+  color: '#bb9d55',
+ },
+ bmCrossButton: {
+  height: '32px',
+  width: '32px',
+  top: '-5px',
+  left: '32px',
+ },
+ bmMenuWrap: {
+  height: '100vh',
+  width: '100%',
+ },
+ bmMenu: {
+  background: '#FFF',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  textAlign: 'center',
+  paddingTop: '125px',
+  marginTop: '0px',
+  position: 'absolute',
+  width: '100%',
+ },
+ bmOverlay: {
+  background: 'rgba(0, 0, 0, 0.3)',
+ },
+};
 
 export const HeaderStyled = styled.header`
  height: 5vh;
@@ -32,32 +59,53 @@ export const HeaderStyled = styled.header`
  background-color: #FFF;
 `;
 
-export const MenuWrapp = styled.div`
- height: 100%;
- left: 0;
- overflow: hidden;
- position: fixed;
- top: 0;
+export const Menu = styled.div`
+ position: relative;
  width: 100%;
- visibility: hidden;
+ height: 100%;
+ overflow: hidden auto;
+`;
 
- &.active {
-  visibility: visible !important;
+export const Open = styled(RxHamburgerMenu)``;
+export const Close = styled(VscClose)``;
+
+export const MenuList = styled.ul`
+ padding-top: 20vh;
+ padding-bottom: 20vh;
+ padding-left: 0;
+ display: flex !important;
+ flex-direction: column;
+ gap: 20px;
+ @media screen and (min-width: 992px) {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
  }
 `;
 
-export const Button = styled.button`
- all: unset;
+export const MenuItem = styled.li`
+ color: black;
+ line-height: 1;
+ font-size: 2rem;
+ display: inline-block;
+ padding: 4px 0px;
+ text-decoration: none;
+ text-align: start !important;
+ font-family: 'Sulphur Point', sans-serif;
+ @media screen and (min-width: 768px) {
+  font-size: 4.8vw;
+ }
 `;
-// export const MenuBg= styled.div`
-//     position: absolute;
-//     left: 0px;
-//     top: 0px;
-//     width: 100%;
-//     height: 100%;
-//     background-color: #ffffff;
-//     will-change: transform;
-//     transform: translateY(-100%);
-//     transition: .5s ease all;
-//      &.active {transform: translateY(0);}
-// `
+
+export const MenuLink = styled(Link)`
+ color: black;
+ transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
+ &:hover {
+  color: #bb9d55;
+ }
+`;
+
+export const BurgerMenuContainer = styled.div`
+ display: flex;
+ align-items: center;
+ justify-content: center;
+`;

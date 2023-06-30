@@ -16,7 +16,6 @@ import {
  Text,
  Particle,
  ButtonWrapp,
- ButtonB,
  Button,
  ImageWrapp,
 } from '../Home/Home.styled';
@@ -60,10 +59,7 @@ function Home() {
       <ul>
        <Link to="/portfolio">
         <li>
-         <ButtonB href="/">My Portfolio</ButtonB>
-         <div $one></div>
-         <div $two></div>
-         <div $three></div>
+         <Button href="/">My Portfolio</Button>
         </li>
        </Link>
 

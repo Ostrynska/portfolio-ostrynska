@@ -15,14 +15,6 @@ const navElements = [
   name: 'About',
  },
  {
-  to: 'skills',
-  name: 'Skills',
- },
- {
-  to: 'services',
-  name: 'Services',
- },
- {
   to: 'portfolio',
   name: 'Portfolio',
  },

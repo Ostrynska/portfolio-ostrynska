@@ -1,39 +1,58 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
 
-import { navElements } from "../../contentOption";
-import { HeaderStyled, MenuWrapp, MenuBg, Button, Open, Close } from './Header.styled'
+import { fallDown as Menu } from 'react-burger-menu';
+
+import { navElements } from '../../contentOption';
+import {
+ HeaderStyled,
+ MenuLink,
+ BurgerMenuStyles,
+ BurgerMenuContainer,
+ MenuList,
+ MenuItem,
+ Open,
+ Close,
+} from './Header.styled';
 
 const Header = () => {
-  const [isActive, setActive] = useState("false");
+ const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleToggle = () => {
-    setActive(!isActive);
-    document.body.classList.toggle("ovhidden");
-  };
-  return (
-    <HeaderStyled>
-          <div>
-          {/* <Themetoggle /> */}
-          <Button onClick={handleToggle}>
-            {!isActive ? <Close /> : <Open />}
-          </Button>
-              <MenuWrapp className={!isActive ? 'active' : ''}>
-                  {/* <MenuBg> */}
-            {navElements.map(({ to, name }) => (
-                <li key={to}>
-                <Link
-                    to={to} onClick={handleToggle}
-                >
-                    {name}
-                </Link>
-                </li>
-            ))}
-                      {/* </MenuBg> */}
-           </MenuWrapp>
-          </div>
-    </HeaderStyled>
-  );
+ const handleStateChange = state => {
+  setMenuOpen(state.isOpen);
+ };
+
+ const closeMenu = () => {
+  setMenuOpen(false);
+ };
+ return (
+  <>
+   <HeaderStyled>
+    <div>
+     {/* <Themetoggle /> */}
+     <BurgerMenuContainer>
+      <Menu
+       customBurgerIcon={<Open />}
+       customCrossIcon={<Close />}
+       right
+       isOpen={menuOpen}
+       onStateChange={state => handleStateChange(state)}
+       styles={BurgerMenuStyles}
+      >
+       <MenuList>
+        {navElements.map(({ to, name }) => (
+         <MenuItem key={to}>
+          <MenuLink to={to} onClick={() => closeMenu()}>
+           {name}
+          </MenuLink>
+         </MenuItem>
+        ))}
+       </MenuList>
+      </Menu>
+     </BurgerMenuContainer>
+    </div>
+   </HeaderStyled>
+  </>
+ );
 };
 
 export default Header;

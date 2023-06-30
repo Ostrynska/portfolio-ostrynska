@@ -81,7 +81,7 @@ export const Button = styled.a`
   color: black;
   background: #bb9d55;
    border: 2px solid #bb9d55;
-   box-shadow: 8px 8px 0px #bb9d55, -8px -8px 0px #bb9d55;
+   box-shadow: 8px 8px 0px black, -8px -8px 0px #bb9d55;
  }
 
  ${props =>
@@ -96,56 +96,6 @@ export const Button = styled.a`
     border: 2px solid #fff;
    }
   `}
-
-  ${
-   '' /* div {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: transparent;
-    top: 0;
-    left: 0;
-    transform: translate3d(0px, 90px, 0px);
-     ${props =>
-      props.$one &&
-      css`
-       background-color: #bb9d55;
-       transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-       z-index: -3;
-       z-index: -4;
-       &:hover {
-        opacity: 1;
-        transform: translate3d(0px, 0px, 0px);
-       }
-      `}
-     ${props =>
-      props.$two &&
-      css`
-       background-color: #bb9d55;
-       transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-       z-index: -3;
-       &:hover {
-        transform: translate3d(0px, 0px, 0px);
-       }
-      `}
-     ${props =>
-      props.$three &&
-      css`
-       background-color: #bb9d55;
-       z-index: -2;
-       transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
-       z-index: -3;
-       &:hover {
-        transform: translate3d(0px, 0px, 0px);
-       }
-      `} */
-  }
-  }
-`;
-
-export const ButtonB = styled(Button)`
- background: #fff;
- color: #000;
 `;
 
 export const ImageWrapp = styled.div`
