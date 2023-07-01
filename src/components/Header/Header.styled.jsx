@@ -43,7 +43,6 @@ export const BurgerMenuStyles = {
 };
 
 export const HeaderStyled = styled.header`
- height: 5vh;
  position: sticky;
  top: 0;
  z-index: 2;
