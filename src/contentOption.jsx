@@ -152,4 +152,16 @@ const particles = {
  },
  retina_detect: true,
 };
-export { socials, navElements, introdata, particles, meta };
+
+const contactConfig = {
+ YOUR_EMAIL: 'ostrynska.kateryna@gmail.com',
+ YOUR_PHONE: '+38 097 367-69-12',
+ description:
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ',
+ // creat an emailjs.com account
+ // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+ YOUR_SERVICE_ID: 'service_id',
+ YOUR_TEMPLATE_ID: 'template_id',
+ YOUR_USER_ID: 'user_id',
+};
+export { socials, navElements, introdata, particles, meta, contactConfig };
