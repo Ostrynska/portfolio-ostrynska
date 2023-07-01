@@ -71,7 +71,7 @@ export const TextContacts = styled.address`
 
  display: flex;
  flex-wrap: wrap;
- gap: 1rem;
+ gap: 1.5rem;
  margin-bottom: 2rem;
 
  a {
@@ -91,4 +91,87 @@ export const Text = styled.p`
  gap: 10px;
 
  font-family: 'Raleway', sans-serif;
+`;
+
+export const FormWrapp = styled.div`
+ display: flex;
+ width: 58.33333333%;
+ max-width: 100%;
+ align-items: flex-end;
+ padding-left: calc((1.5rem * 0.5) * 4);
+ ${'' /* padding-right: calc(1.5rem * 0.5); */}
+`;
+
+export const Form = styled.form`
+ width: 100%;
+`;
+
+export const FormInputs = styled.div`
+ display: flex;
+ margin-top: calc(1.5rem * -1);
+ margin-bottom: 2em;
+ gap: calc((1.5rem * 0.5) * 2);
+`;
+
+export const Input = styled.input`
+ height: calc(2.5em + 0.75rem + 2px);
+
+ background-color: transparent;
+ border: 1px solid #000;
+ border-radius: 0;
+ color: #000;
+ line-height: 1.5;
+ padding: 1.375rem 0.75rem;
+
+ font-family: 'Raleway', sans-serif;
+ font-size: 1rem;
+ font-weight: 400;
+ transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ width: 100%;
+ ::placeholder {
+  font-family: 'Raleway', sans-serif;
+ }
+ &:hover,
+ &:focus {
+  border-color: #bb9d55;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
+`;
+
+export const InputMessage = styled.textarea`
+ min-height: calc(2.5em + 0.75rem + 2px);
+ margin-bottom: 2em;
+
+ background-color: transparent;
+ border: 1px solid #000;
+ border-radius: 0;
+ color: #000;
+ line-height: 1.5;
+ padding: 1.375rem 0.75rem;
+
+ font-family: 'Raleway', sans-serif;
+ font-size: 1rem;
+ font-weight: 400;
+ transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ width: 100%;
+ ::placeholder {
+  font-family: 'Raleway', sans-serif;
+ }
+ &:hover,
+ &:focus {
+  border-color: #bb9d55;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
+`;
+
+export const Button = styled.button`
+ font-family: 'Raleway', sans-serif;
+
+ border: 2px solid #000;
+ border-radius: 0;
+ color: #000;
+ overflow: hidden;
+ padding: 4px 19px;
+ position: relative;
+ transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 `;
