@@ -58,6 +58,7 @@ code {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button, input {
@@ -68,4 +69,8 @@ button, input {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+address {
+  all: initial;
 }
