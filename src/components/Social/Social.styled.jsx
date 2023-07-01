@@ -67,6 +67,7 @@ export const SocialText = styled.p`
  width: 68px;
  height: 20px;
  color: #000;
+ font-family: 'Sulphur Point', sans-serif;
  font-size: 12px;
  font-weight: 600;
  line-height: 1.2;
@@ -84,36 +85,3 @@ export const SocialText = styled.p`
   background-color: #000;
  }
 `;
-
-// @media only screen and (max-width: 991px) {
-//     .stick_follow_icon {
-//         width: unset;
-//         height: unset;
-//         position: static;
-//         margin-top: unset;
-//         display: flex;
-//         flex-direction: row-reverse;
-//         justify-content: center;
-//         padding: 40px 0;
-//         align-items: center;
-//     }
-//     .stick_follow_icon p {
-//         top: unset;
-//         left: unset;
-//         width: unset;
-//         height: unset;
-//         white-space: nowrap;
-//         position: relative;
-//         transform: unset;
-//         font-size: 17px;
-//         margin-right: 65px;
-//     }
-//     .stick_follow_icon ul {
-//         margin-bottom: 20px;
-//     }
-//     .stick_follow_icon ul li {
-//         display: inline;
-//         margin-bottom: 29px;
-//         margin-right: 10px;
-//     }
-// }
