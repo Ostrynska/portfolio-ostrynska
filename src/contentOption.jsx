@@ -36,6 +36,12 @@ const introdata = {
  your_img_url: 'https://images.unsplash.com/photo-1514790193030-c89d266d5a9d',
 };
 
+const meta = {
+ title: 'John Doe',
+ description:
+  'I’m John Doe data scientist _ Full stack devloper,currently working in Berlin',
+};
+
 const particles = {
  particles: {
   number: {
@@ -146,4 +152,4 @@ const particles = {
  },
  retina_detect: true,
 };
-export { socials, navElements, introdata, particles };
+export { socials, navElements, introdata, particles, meta };
