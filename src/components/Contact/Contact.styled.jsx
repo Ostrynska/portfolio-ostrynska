@@ -138,7 +138,7 @@ export const Input = styled.input`
  }
 `;
 
-export const InputMessage = styled.textarea`
+export const InputStyled = styled.textarea`
  min-height: calc(1.5em + 0.75rem + 2px);
  margin-bottom: 1em;
 
@@ -161,6 +161,7 @@ export const InputMessage = styled.textarea`
  &:focus {
   border-color: #bb9d55;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  outline: none;
  }
 `;
 
@@ -174,4 +175,10 @@ export const Button = styled.button`
  padding: 4px 19px;
  position: relative;
  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+ &:hover {
+  ${'' /* color: #bb9d55; */}
+  background: transparent;
+  border: 2px solid #bb9d55;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
 `;

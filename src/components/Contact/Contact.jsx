@@ -19,7 +19,7 @@ import {
  Form,
  FormInputs,
  Input,
- InputMessage,
+ InputStyled,
  Button,
 } from './Contact.styled';
 
@@ -69,7 +69,7 @@ const Contact = () => {
       variant: 'danger',
       show: true,
      });
-     document.getElementsByClassName('co_alert')[0].scrollIntoView();
+     //  document.getElementsByClassName('co_alert')[0].scrollIntoView();
     }
    );
  };
@@ -83,7 +83,7 @@ const Contact = () => {
 
  return (
   <div>
-   <Alert
+   {/* <Alert
     //show={formData.show}
     variant={formData.variant}
     // className={`rounded-0 co_alert ${formData.show ? 'd-block' : 'd-none'}`}
@@ -92,7 +92,7 @@ const Contact = () => {
    >
     {' '}
     <p>{formData.alertmessage}</p>
-   </Alert>
+   </Alert> */}
 
    <Container>
     <TitleWrapp>
@@ -145,7 +145,7 @@ const Contact = () => {
          onChange={handleChange}
         />
        </FormInputs>
-       <InputMessage
+       <InputStyled
         id="message"
         name="message"
         placeholder="Message"
@@ -154,13 +154,13 @@ const Contact = () => {
         required
         value={formData.message}
         onChange={handleChange}
-       ></InputMessage>
+       ></InputStyled>
        <Button type="submit">{formData.loading ? 'Sending...' : 'Send'}</Button>
       </Form>
      </FormWrapp>
     </Content>
    </Container>
-   <div className={formData.loading ? 'loading-bar' : 'd-none'}></div>
+   {/* <div className={formData.loading ? 'loading-bar' : 'd-none'}></div> */}
   </div>
  );
 };
