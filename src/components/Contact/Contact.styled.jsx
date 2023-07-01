@@ -109,12 +109,12 @@ export const Form = styled.form`
 export const FormInputs = styled.div`
  display: flex;
  margin-top: calc(1.5rem * -1);
- margin-bottom: 2em;
+ margin-bottom: 1em;
  gap: calc((1.5rem * 0.5) * 2);
 `;
 
 export const Input = styled.input`
- height: calc(2.5em + 0.75rem + 2px);
+ height: calc(1.5em + 0.75rem + 2px);
 
  background-color: transparent;
  border: 1px solid #000;
@@ -139,8 +139,8 @@ export const Input = styled.input`
 `;
 
 export const InputMessage = styled.textarea`
- min-height: calc(2.5em + 0.75rem + 2px);
- margin-bottom: 2em;
+ min-height: calc(1.5em + 0.75rem + 2px);
+ margin-bottom: 1em;
 
  background-color: transparent;
  border: 1px solid #000;
