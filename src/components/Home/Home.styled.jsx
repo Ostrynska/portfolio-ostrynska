@@ -78,10 +78,9 @@ export const Button = styled.a`
  text-align: center;
 
  &:hover {
-  color: black;
+  color: white;
   background: #bb9d55;
    border: 2px solid #bb9d55;
-   box-shadow: 8px 8px 0px black, -8px -8px 0px #bb9d55;
  }
 
  ${props =>
@@ -93,7 +92,7 @@ export const Button = styled.a`
    &:hover {
     color: #bb9d55;
     background: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #bb9d55;
    }
   `}
 `;
