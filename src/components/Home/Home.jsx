@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 // import { loadFull } from "tsparticles";
 
 import { introdata, particles } from '../../contentOption';
-import myImage from '../../images/myphoto.png';
+
 import {
  HomeWrapp,
  HomeMain,
@@ -38,7 +38,7 @@ function Home() {
    <HomeWrapp>
     <HomeMain>
      <HomeMainCol xl={12}>
-      <Title>I’m Kateryna Ostrynska</Title>
+      <Title>{introdata.title}</Title>
       <PreTitle>
        <Typewriter
         options={{
@@ -74,7 +74,7 @@ function Home() {
      </ButtonWrapp>
     </HomeMain>
     <ImageWrapp>
-     <img src={myImage} alt="Моє зображення" width={300} />
+     <img src={introdata.image} alt="Моє зображення" width={300} />
     </ImageWrapp>
    </HomeWrapp>
   </Animate>
