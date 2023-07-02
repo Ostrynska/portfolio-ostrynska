@@ -1,8 +1,10 @@
+import myImage from './images/myphoto.png';
+
 const socials = {
- github: 'https://github.com',
- facebook: 'https://facebook.com',
- linkedin: 'https://linkedin.com',
- instagram: 'https://instagram.com',
+ github: 'https://github.com/Ostrynska',
+ facebook: 'https://www.facebook.com/ostrynska.k',
+ linkedin: 'https://www.linkedin.com/in/kateryna-ostrynska-9155b0151',
+ instagram: 'https://www.instagram.com/k_ostrynska',
 };
 
 const navElements = [
@@ -25,7 +27,7 @@ const navElements = [
 ];
 
 const introdata = {
- title: 'I’m John Doe',
+ title: 'I’m Kateryna Ostrynska',
  animated: {
   first: 'I love coding',
   second: 'Currently learning TypeScript, NodeJS',
@@ -33,13 +35,13 @@ const introdata = {
  },
  description:
   'A passionate Frontend Developer from Ukraine, Kyiv. I love coding and developing new things.',
- your_img_url: 'https://images.unsplash.com/photo-1514790193030-c89d266d5a9d',
+ image: myImage,
 };
 
 const meta = {
- title: 'John Doe',
+ title: 'Kateryna Ostrynska',
  description:
-  'I’m John Doe data scientist _ Full stack devloper,currently working in Berlin',
+  'I’m Kateryna Ostrynskaa _ Full stack devloper,currently working in Kyiv',
 };
 
 const particles = {
