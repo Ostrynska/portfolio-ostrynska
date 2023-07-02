@@ -159,11 +159,35 @@ const contactConfig = {
  YOUR_EMAIL: 'ostrynska.kateryna@gmail.com',
  YOUR_PHONE: '+38 097 367-69-12',
  description:
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ',
+  'Hola Visitor! Thank you for bumping in. If you have any queries/ideas/projects, feel free to PING me. I am always open to discussion. You can contact me via the Contact Form OR simply click on the social media icon if you are more comfortable there.',
  // creat an emailjs.com account
  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
- YOUR_SERVICE_ID: 'service_id',
- YOUR_TEMPLATE_ID: 'template_id',
- YOUR_USER_ID: 'user_id',
+ YOUR_SERVICE_ID: 'service_3tfdstj',
+ YOUR_TEMPLATE_ID: 'template_gey5vx9',
+ YOUR_USER_ID: 'D6nz0LmQ7AsksAHWn',
 };
-export { socials, navElements, introdata, particles, meta, contactConfig };
+
+const customModalStyles = {
+ content: {
+  top: '50%',
+  left: '50%',
+  right: 'auto',
+  bottom: 'auto',
+  marginRight: '-50%',
+  transform: 'translate(-50%, -50%)',
+  padding: '40px',
+ },
+ overlay: {
+  backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  zIndex: '100',
+ },
+};
+export {
+ socials,
+ navElements,
+ introdata,
+ particles,
+ meta,
+ contactConfig,
+ customModalStyles,
+};

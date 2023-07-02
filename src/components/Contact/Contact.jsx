@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
 import * as emailjs from 'emailjs-com';
-import { Alert } from 'react-bootstrap';
+import Modal from 'react-modal';
 
-import { contactConfig } from '../../contentOption';
+import { RxCross1 } from 'react-icons/rx';
+
+import { contactConfig, customModalStyles } from '../../contentOption';
 
 import {
  Container,
@@ -20,8 +22,11 @@ import {
  FormInputs,
  Input,
  InputStyled,
+ ModalCloseButton,
  Button,
- AlertStyled,
+ Message,
+ MessageStatus,
+ MessageStatusText,
 } from './Contact.styled';
 
 const Contact = () => {
@@ -30,18 +35,16 @@ const Contact = () => {
   name: '',
   message: '',
   loading: false,
-  show: false,
-  alertmessage: '',
-  variant: '',
+  modalOpen: false,
  });
 
  const handleSubmit = e => {
   e.preventDefault();
-  setFormdata({ loading: true });
+  setFormdata({ ...formData, loading: true });
 
   const templateParams = {
-   from_name: formData.email,
-   user_name: formData.name,
+   from_name: formData.name,
+   user_email: formData.email,
    to_name: contactConfig.YOUR_EMAIL,
    message: formData.message,
   };
@@ -57,22 +60,38 @@ const Contact = () => {
     result => {
      console.log(result.text);
      setFormdata({
+      ...formData,
       loading: false,
-      alertmessage: 'SUCCESS! ,Thankyou for your messege',
+      modalOpen: true,
+      alertmessage: (
+       <Message>
+        <MessageStatus $success>Message delivered! ✅</MessageStatus>
+        <MessageStatusText>
+         Thank you! Your message was sent successfully.
+        </MessageStatusText>
+       </Message>
+      ),
       variant: 'success',
-      show: true,
      });
     },
     error => {
      console.log(error.text);
      setFormdata({
-      alertmessage: `Faild to send!,${error.text}`,
+      ...formData,
+      modalOpen: true,
+      alertmessage: (
+       <Message>
+        <MessageStatus $error>Message not delivered! 💥</MessageStatus>
+        <MessageStatusText>
+         Sorry. Your message was unable to send.
+        </MessageStatusText>
+       </Message>
+      ),
       variant: 'danger',
-      show: true,
      });
-     //  document.getElementsByClassName('co_alert')[0].scrollIntoView();
     }
    );
+  setFormdata({ ...formData, email: '', name: '', message: '' });
  };
 
  const handleChange = e => {
@@ -82,17 +101,30 @@ const Contact = () => {
   });
  };
 
+ const closeModal = () => {
+  setFormdata({
+   ...formData,
+   modalOpen: false,
+   email: '',
+   name: '',
+   message: '',
+  });
+ };
+
  return (
   <div>
-   <AlertStyled
-    //show={formData.show}
-    variant={formData.variant}
-    style={formData.show ? '$block' : '$none'}
-    onClose={() => setFormdata({ show: false })}
-    dismissible
+   <Modal
+    isOpen={formData.modalOpen}
+    onRequestClose={closeModal}
+    style={customModalStyles}
+    shouldCloseOnOverlayClick={true}
+    contentLabel="Message Modal"
    >
     <p>{formData.alertmessage}</p>
-   </AlertStyled>
+    <ModalCloseButton onClick={closeModal}>
+     <RxCross1 />
+    </ModalCloseButton>
+   </Modal>
 
    <Container>
     <TitleWrapp>
@@ -113,7 +145,7 @@ const Contact = () => {
        </a>
       </TextContacts>
       <Text>
-       <p>Hola Visitor !</p>
+       <p>Hola Visitor!</p>
        <p>
         Thank you for bumping in. If you have any queries/ideas/projects, feel
         free to PING me. I am always open to discussion. You can contact me via
@@ -160,7 +192,7 @@ const Contact = () => {
      </FormWrapp>
     </Content>
    </Container>
-   {/* <div className={formData.loading ? 'loading-bar' : 'd-none'}></div> */}
+   <div className={formData.loading ? 'loading-bar' : 'd-none'}></div>
   </div>
  );
 };

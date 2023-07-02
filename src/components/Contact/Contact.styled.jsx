@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components';
 
-import { Alert } from 'react-bootstrap';
-
 export const Container = styled.div`
  height: 90vh;
  margin-left: auto;
@@ -178,22 +176,46 @@ export const Button = styled.button`
  position: relative;
  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
  &:hover {
-  ${'' /* color: #bb9d55; */}
   background: transparent;
   border: 2px solid #bb9d55;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  }
 `;
 
-export const AlertStyled = styled(Alert)`
+export const ModalCloseButton = styled.button`
+ border: none;
+ width: 12px;
+ height: 12px;
+ position: absolute;
+ top: 15px;
+ right: 18px;
+ cursor: pointer;
+ background-color: transparent;
+ ${
+  '' /* @media (min-width: 478px) {
+  width: 14px;
+  height: 14px;
+  top: 24px;
+  right: 24px;
+ } */
+ }
+`;
+export const Message = styled.div`
+ display: flex;
+ flex-direction: column;
+`;
+
+export const MessageStatus = styled(TextWrappTitle)`
  ${props =>
-  props.$block &&
+  props.$success &&
   css`
-   display: block;
+   color: green;
   `}
  ${props =>
-  props.$none &&
+  props.$error &&
   css`
-   display: none;
+   color: red;
   `}
 `;
+
+export const MessageStatusText = styled(Text)``;
