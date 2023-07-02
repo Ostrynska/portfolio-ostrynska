@@ -30,10 +30,29 @@ export const Title = styled.h1`
  font-weight: 300;
  line-height: 1.2;
  margin-bottom: 0.5rem;
- margin-top: 0;
+`;
+export const TitlePosition = styled.h2`
+ position: relative;
+ font-family: 'Sulphur Point', sans-serif;
+ font-size: 22px;
+ font-weight: 300;
+ line-height: 1.2;
+ margin-bottom: 0.5rem;
+ padding-left: 5.4rem;
+ color: #bb9d55;
+
+ &::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background-color: #bb9d55;
+  left: 0;
+  top: 1rem;
+ }
 `;
 
-export const PreTitle = styled.h2`
+export const PreTitle = styled.h3`
  font-size: 24px;
  font-weight: 700;
  margin-bottom: 50px;
@@ -80,7 +99,8 @@ export const Button = styled.a`
  &:hover {
   color: white;
   background: #bb9d55;
-   border: 2px solid #bb9d55;
+  border: 2px solid #bb9d55;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  }
 
  ${props =>
@@ -90,9 +110,11 @@ export const Button = styled.a`
    color: black;
 
    &:hover {
-    color: #bb9d55;
+    color: black;
+    ${'' /* color: #bb9d55; */}
     background: transparent;
     border: 2px solid #bb9d55;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    }
   `}
 `;

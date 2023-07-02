@@ -12,6 +12,7 @@ import {
  HomeMain,
  HomeMainCol,
  Title,
+ TitlePosition,
  PreTitle,
  Text,
  Particle,
@@ -38,6 +39,7 @@ function Home() {
    <HomeWrapp>
     <HomeMain>
      <HomeMainCol xl={12}>
+      <TitlePosition>Full-stack developer</TitlePosition>
       <Title>{introdata.title}</Title>
       <PreTitle>
        <Typewriter
