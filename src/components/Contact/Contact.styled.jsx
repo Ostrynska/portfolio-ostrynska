@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+import { Alert } from 'react-bootstrap';
 
 export const Container = styled.div`
  height: 90vh;
@@ -181,4 +183,17 @@ export const Button = styled.button`
   border: 2px solid #bb9d55;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  }
+`;
+
+export const AlertStyled = styled(Alert)`
+ ${props =>
+  props.$block &&
+  css`
+   display: block;
+  `}
+ ${props =>
+  props.$none &&
+  css`
+   display: none;
+  `}
 `;

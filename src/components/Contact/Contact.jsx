@@ -21,6 +21,7 @@ import {
  Input,
  InputStyled,
  Button,
+ AlertStyled,
 } from './Contact.styled';
 
 const Contact = () => {
@@ -83,16 +84,15 @@ const Contact = () => {
 
  return (
   <div>
-   {/* <Alert
+   <AlertStyled
     //show={formData.show}
     variant={formData.variant}
-    // className={`rounded-0 co_alert ${formData.show ? 'd-block' : 'd-none'}`}
+    style={formData.show ? '$block' : '$none'}
     onClose={() => setFormdata({ show: false })}
     dismissible
    >
-    {' '}
     <p>{formData.alertmessage}</p>
-   </Alert> */}
+   </AlertStyled>
 
    <Container>
     <TitleWrapp>
