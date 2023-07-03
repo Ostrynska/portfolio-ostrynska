@@ -1,5 +1,11 @@
 import myImage from './images/myphoto.png';
 
+const meta = {
+ title: 'Kateryna Ostrynska',
+ description:
+  'I’m Kateryna Ostrynskaa _ Full stack devloper,currently working in Kyiv',
+};
+
 const socials = {
  github: 'https://github.com/Ostrynska',
  facebook: 'https://www.facebook.com/ostrynska.k',
@@ -36,12 +42,6 @@ const introdata = {
  description:
   'A passionate Frontend Developer from Ukraine, Kyiv. I love coding and developing new things.',
  image: myImage,
-};
-
-const meta = {
- title: 'Kateryna Ostrynska',
- description:
-  'I’m Kateryna Ostrynskaa _ Full stack devloper,currently working in Kyiv',
 };
 
 const particles = {
@@ -182,6 +182,96 @@ const customModalStyles = {
   zIndex: '100',
  },
 };
+
+const portfolioData = [
+ {
+  image: '',
+  title: 'Web-Studio',
+  link: 'https://ostrynska.github.io/project-webstudio/#en',
+  git: 'https://github.com/Ostrynska/project-webstudio',
+  category: 'personal',
+  id: '0',
+  tools: 'HTML5, SASS, JS, Mobile-first, Adaptive design',
+  description:
+   'First personal project. Web-studio is a website with a responsive layout. In addition, created a language switcher (en-ua), content filter by category.',
+ },
+ {
+  image: '',
+  title: 'Ice Cream Shop',
+  link: 'https://samusev-anton.github.io/ice-cream-n/',
+  git: 'https://github.com/Samusev-Anton/ice-cream-n',
+  category: 'team',
+  id: '1',
+  tools: 'HTML5, SASS, JS, Mobile-first, Adaptive design, Parsel',
+  description:
+   'Team project, role: developer. Adaptive website for the retail chain of stores. I managed to work on the Contacts section and element on the layout that hasn’t any stylization (modal window in the section About) and Scroll to Top button.',
+ },
+ {
+  image: '',
+  title: 'Filmoteka',
+  link: 'https://samusev-anton.github.io/filmoteka',
+  git: 'https://github.com/Samusev-Anton/filmoteka',
+  category: 'team',
+  id: '2',
+  tools: 'HTML5, SASS, JS, Mobile-first, Adaptive design, Parsel, REST API',
+  description:
+   'Team project, role: developer. Application for choosing a movie. I managed to work on positioning and styling the movie cards, as well as page pagination for search results, filters and popular movies.',
+ },
+ {
+  image: '',
+  title: '',
+  link: '',
+  git: '',
+  category: 'team',
+  id: '3',
+  tools: 'HTML5, SASS, JS, Mobile-first, Adaptive design, Parsel, REST API',
+  description:
+   'Team project, role: developer. Application for choosing a movie. I managed to work on positioning and styling the movie cards, as well as page pagination for search results, filters and popular movies.',
+ },
+ {
+  image: 'https://live.staticflickr.com/65535/52909411801_7e494c99f6.jpg',
+  title: 'Filmoteka',
+  link: 'https://4106677.github.io/team-project-js/',
+  category: 'web',
+  id: '4',
+ },
+ {
+  image: 'https://live.staticflickr.com/65535/52909564274_4e2d39e087.jpg',
+  title: 'Britlex',
+  link: 'https://4106677.github.io/britlex/',
+  category: 'web',
+  id: '5',
+ },
+ {
+  image: 'https://live.staticflickr.com/65535/52909800060_3f29b87c6f.jpg',
+  title: 'BarberShop',
+  link: 'https://4106677.github.io/barbershop-lorem/',
+  category: 'web',
+  id: '6',
+ },
+ {
+  image: 'https://live.staticflickr.com/65535/52909537849_9123866427.jpg',
+  title: 'Phonebook',
+  link: 'https://github.com/4106677/goit-react-hw-06-phonebook',
+  category: 'web',
+  id: '7',
+ },
+ {
+  image: 'https://live.staticflickr.com/65535/52909374431_a4f9e1a290.jpg',
+  title: "Apt's Marketplace",
+  link: 'https://4106677.github.io/apt-marketpace-app/',
+  category: 'web',
+  id: '8',
+ },
+ {
+  image: 'https://live.staticflickr.com/65535/52908808007_e8630fbc47.jpg',
+  title: 'Movies',
+  link: 'https://4106677.github.io/goit-react-hw-05-movies',
+  category: 'web',
+  id: '9',
+ },
+];
+
 export {
  socials,
  navElements,
@@ -190,4 +280,5 @@ export {
  meta,
  contactConfig,
  customModalStyles,
+ portfolioData,
 };

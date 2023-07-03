@@ -1,20 +1,20 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { meta } from '../../contentOption';
-import Contact from '../../components/Contact/Contact';
+import Portfolio from '../../components/Portfolio/Portfolio';
 
-const ContactPage = () => {
+const PortfolioPage = () => {
  return (
   <HelmetProvider>
-   <section id="contact">
+   <section id="portfolio">
     <Helmet>
      <meta charSet="utf-8" />
      <title> {meta.title}</title>
      <meta name="description" content={meta.description} />
     </Helmet>
-    <Contact />
+    <Portfolio />
    </section>
   </HelmetProvider>
  );
 };
 
-export default ContactPage;
+export default PortfolioPage;
