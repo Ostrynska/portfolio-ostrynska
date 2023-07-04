@@ -185,7 +185,8 @@ const customModalStyles = {
 
 const portfolioData = [
  {
-  image: '',
+  image:
+   'https://asset.cloudinary.com/dcjlswtup/f3ca4dc48e47c8a8f30e245fa7437c97',
   title: 'Web-Studio',
   link: 'https://ostrynska.github.io/project-webstudio/#en',
   git: 'https://github.com/Ostrynska/project-webstudio',
@@ -196,7 +197,8 @@ const portfolioData = [
    'First personal project. Web-studio is a website with a responsive layout. In addition, created a language switcher (en-ua), content filter by category.',
  },
  {
-  image: '',
+  image:
+   'https://asset.cloudinary.com/dcjlswtup/485a98bcf6531773cf0e6cc771320376',
   title: 'Ice Cream Shop',
   link: 'https://samusev-anton.github.io/ice-cream-n/',
   git: 'https://github.com/Samusev-Anton/ice-cream-n',
@@ -207,7 +209,8 @@ const portfolioData = [
    'Team project, role: developer. Adaptive website for the retail chain of stores. I managed to work on the Contacts section and element on the layout that hasn’t any stylization (modal window in the section About) and Scroll to Top button.',
  },
  {
-  image: '',
+  image:
+   'https://asset.cloudinary.com/dcjlswtup/9c3897433c46c27622acc850e577387e',
   title: 'Filmoteka',
   link: 'https://samusev-anton.github.io/filmoteka',
   git: 'https://github.com/Samusev-Anton/filmoteka',
@@ -218,7 +221,8 @@ const portfolioData = [
    'Team project, role: developer. Application for choosing a movie. I managed to work on positioning and styling the movie cards, as well as page pagination for search results, filters and popular movies.',
  },
  {
-  image: '',
+  image:
+   'https://asset.cloudinary.com/dcjlswtup/78c90fdd3389a11ad2f42224024f8f83',
   title: 'Pixelstock',
   link: 'https://pixelstock.netlify.app/',
   git: 'https://github.com/Ostrynska/pixelstock',
@@ -238,6 +242,50 @@ const portfolioData = [
   tools: 'React, Mobile-first, Adaptive design, REST API',
   description:
    'Personal project of an adaptive website for searching and storing movies. For HTTP requests, the public service themoviedb.org API was used. To create a collection, a list of the most popular movies for today is rendered on the main page. It is also possible to search for a movie by keyword and request full movie information for the movie page (including cast and reviews).',
+ },
+ {
+  image: '',
+  title: 'Phonebook',
+  link: 'https://ostrynska.github.io/goit-react-hw-08-phonebook/',
+  git: 'https://github.com/Ostrynska/goit-react-hw-08-phonebook',
+  category: 'personal',
+  id: '5',
+  tools: 'React, Mobile-first, Adaptive design, REST API',
+  description:
+   'Phonebook app that allows registration, login, and updating of users contacts, as well as working with a private collection of contacts.',
+ },
+ {
+  image: '',
+  title: 'Recipes - So Yummy',
+  link: 'https://4106677.github.io/so-yummy-front-end/',
+  git: 'https://github.com/4106677/so-yummy-front-end',
+  category: 'team',
+  id: '6',
+  tools: 'React, Mobile-first, Adaptive design, REST API',
+  description:
+   '"What to cook?" is not only a recipe app, it is, in fact, your cookbook. You can add your own recipes to save them for the future. The application has been developed taking into account the adaptive layout from mobile devices to desktop.',
+ },
+ {
+  image: '',
+  title: 'Social media App',
+  link: 'exp://exp.host/@ostrynska/socialMediaApp?release-channel=default',
+  git: 'https://github.com/Ostrynska/react-native-app',
+  category: 'personal',
+  id: '7',
+  tools: 'React Native, Firebase',
+  description:
+   'This is a cross-platform (iOS and Android) social media mobile application. The current version of the application allows registered users to submit posts and comments to them. Users can also easily "like" posts and view the location where the photo was taken on the map. Logic has been added so that only the author of the post can take a photo when creating a post, as well as add photos from the smartphone library. When uploading a photo, you can choose a location.',
+ },
+ {
+  image: '',
+  title: 'Prime Chat',
+  link: 'https://prime-chat.netlify.app/',
+  git: 'https://github.com/Ostrynska/prime-chat',
+  category: 'personal',
+  id: '8',
+  tools: 'React, ',
+  description:
+   'This is a demo real-time chat application project to learn Socket.io (Full Stack Chatting App). The application has been developed taking into account the adaptive layout from mobile devices to desktops and built using React, Node.js. Uses Socket.io for real-time communication and stores user details in encrypted format in Mongo DB Database.',
  },
 ];
 
