@@ -7,6 +7,8 @@ import {
  Title,
  TitleLine,
  Content,
+ List,
+ Item,
 } from './Portfolio.styled';
 
 const projectFilters = [
@@ -66,9 +68,9 @@ const Portfolio = () => {
        );
       })}
      </div>
-     <ul>
+     <List>
       {portfolioData.map(item => (
-       <li key={item.id}>
+       <Item key={item.id}>
         <div>
          <img src={item.image} alt={item.title} width={150} />
          <h2>{item.title}</h2>
@@ -85,9 +87,9 @@ const Portfolio = () => {
          </a>
          <p>{item.description}</p>
         </div>
-       </li>
+       </Item>
       ))}
-     </ul>
+     </List>
     </Content>
    </Container>
   </div>

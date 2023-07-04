@@ -45,3 +45,19 @@ export const Content = styled.div`
  display: flex;
  flex-wrap: wrap;
 `;
+
+export const List = styled.ul`
+ display: flex;
+ flex-wrap: wrap;
+ align-item: center;
+ justify-content: center;
+ gap: 40px;
+`;
+
+export const Item = styled.li`
+ width: 530px;
+ height: 285px;
+ p {
+  font-size: 14px;
+ }
+`;
