@@ -219,14 +219,14 @@ const portfolioData = [
  },
  {
   image: '',
-  title: '',
-  link: '',
-  git: '',
-  category: 'team',
+  title: 'Pixelstock',
+  link: 'https://pixelstock.netlify.app/',
+  git: 'https://github.com/Ostrynska/pixelstock',
+  category: 'personal',
   id: '3',
-  tools: 'HTML5, SASS, JS, Mobile-first, Adaptive design, Parsel, REST API',
+  tools: 'React, Mobile-first, Adaptive design, REST API',
   description:
-   'Team project, role: developer. Application for choosing a movie. I managed to work on positioning and styling the movie cards, as well as page pagination for search results, filters and popular movies.',
+   'Personal project of an adaptive website for searching images by keyword and popular images when it loads. For HTTP requests, used the public image search service Pixabay. A modal window with a dark overlay should open on clicking a gallery item and display an image large version. Hovering over an image, shows the author, the number of likes, and the tags by which users can search for similar images.',
  },
  {
   image: 'https://live.staticflickr.com/65535/52909411801_7e494c99f6.jpg',
