@@ -186,7 +186,7 @@ const customModalStyles = {
 const portfolioData = [
  {
   image:
-   'https://asset.cloudinary.com/dcjlswtup/f3ca4dc48e47c8a8f30e245fa7437c97',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688487254/webstudio_dhuyjl.png',
   title: 'Web-Studio',
   link: 'https://ostrynska.github.io/project-webstudio/#en',
   git: 'https://github.com/Ostrynska/project-webstudio',
@@ -198,7 +198,7 @@ const portfolioData = [
  },
  {
   image:
-   'https://asset.cloudinary.com/dcjlswtup/485a98bcf6531773cf0e6cc771320376',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688487252/icecream_xmqhor.png',
   title: 'Ice Cream Shop',
   link: 'https://samusev-anton.github.io/ice-cream-n/',
   git: 'https://github.com/Samusev-Anton/ice-cream-n',
@@ -210,7 +210,7 @@ const portfolioData = [
  },
  {
   image:
-   'https://asset.cloudinary.com/dcjlswtup/9c3897433c46c27622acc850e577387e',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688487253/filmoteka_euy0q7.png',
   title: 'Filmoteka',
   link: 'https://samusev-anton.github.io/filmoteka',
   git: 'https://github.com/Samusev-Anton/filmoteka',
@@ -222,7 +222,7 @@ const portfolioData = [
  },
  {
   image:
-   'https://asset.cloudinary.com/dcjlswtup/78c90fdd3389a11ad2f42224024f8f83',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688487254/pixelstock_zhildb.png',
   title: 'Pixelstock',
   link: 'https://pixelstock.netlify.app/',
   git: 'https://github.com/Ostrynska/pixelstock',
@@ -255,7 +255,8 @@ const portfolioData = [
    'Phonebook app that allows registration, login, and updating of users contacts, as well as working with a private collection of contacts.',
  },
  {
-  image: '',
+  image:
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688496762/soyummy_fjz9uf.jpg',
   title: 'Recipes - So Yummy',
   link: 'https://4106677.github.io/so-yummy-front-end/',
   git: 'https://github.com/4106677/so-yummy-front-end',
@@ -266,7 +267,8 @@ const portfolioData = [
    '"What to cook?" is not only a recipe app, it is, in fact, your cookbook. You can add your own recipes to save them for the future. The application has been developed taking into account the adaptive layout from mobile devices to desktop.',
  },
  {
-  image: '',
+  image:
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688496752/socialmedia_cdlm0u.png',
   title: 'Social media App',
   link: 'exp://exp.host/@ostrynska/socialMediaApp?release-channel=default',
   git: 'https://github.com/Ostrynska/react-native-app',
@@ -277,7 +279,8 @@ const portfolioData = [
    'This is a cross-platform (iOS and Android) social media mobile application. The current version of the application allows registered users to submit posts and comments to them. Users can also easily "like" posts and view the location where the photo was taken on the map. Logic has been added so that only the author of the post can take a photo when creating a post, as well as add photos from the smartphone library. When uploading a photo, you can choose a location.',
  },
  {
-  image: '',
+  image:
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688496769/primechart_zd7kek.png',
   title: 'Prime Chat',
   link: 'https://prime-chat.netlify.app/',
   git: 'https://github.com/Ostrynska/prime-chat',
