@@ -1,20 +1,14 @@
-import {
-  Row,
-  Col,
-} from 'react-bootstrap';
-
-import {FooterWrapp} from "./Footer.styled"
+import { FooterWrapp } from './Footer.styled';
 
 function Footer() {
-  return (
-    <FooterWrapp fluid={true}>
-      <Row>
-        <Col xl={12}>
-        Copyright © {(new Date().getFullYear())} All rights are reserved <strong>Ostrynska Kateryna</strong>
-        </Col>
-      </Row>
-    </FooterWrapp>
-  );
+ return (
+  <FooterWrapp fluid={true}>
+   <p>
+    © <strong>Ostrynska Kateryna</strong> 2022-{new Date().getFullYear()}. All
+    rights are reserved{' '}
+   </p>
+  </FooterWrapp>
+ );
 }
 
 export default Footer;

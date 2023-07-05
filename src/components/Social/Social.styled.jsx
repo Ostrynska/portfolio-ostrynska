@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { FaGithub, FaInstagram, FaFacebookF, FaLinkedin } from 'react-icons/fa';
+import { IoDocumentAttachSharp } from 'react-icons/io5';
 
 export const SocialWrapp = styled.div`
  top: 50%;
@@ -54,6 +55,15 @@ export const Linkedin = styled(FaLinkedin)`
  }
 `;
 export const Instagram = styled(FaInstagram)`
+ width: 1.3em;
+ height: 1.3em;
+ fill: #000;
+ :hover {
+  fill: #bb9d55;
+ }
+`;
+
+export const Download = styled(IoDocumentAttachSharp)`
  width: 1.3em;
  height: 1.3em;
  fill: #000;
