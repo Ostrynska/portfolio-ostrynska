@@ -61,3 +61,13 @@ export const Item = styled.li`
   font-size: 14px;
  }
 `;
+
+export const FilterList = styled.ul`
+ align-items: center;
+ column-gap: 0.75rem;
+ display: flex;
+ justify-content: center;
+ margin-bottom: 2rem;
+`;
+
+export const FilterItem = styled.li``;

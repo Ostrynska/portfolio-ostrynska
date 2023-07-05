@@ -9,6 +9,8 @@ import {
  Content,
  List,
  Item,
+ FilterList,
+ FilterItem,
 } from './Portfolio.styled';
 
 const projectFilters = [
@@ -60,19 +62,19 @@ const Portfolio = () => {
      <TitleLine />
     </TitleWrapp>
     <Content>
-     <ul>
-      {projectFilters.map((i, index) => {
+     <FilterList>
+      {projectFilters.map((i, idx) => {
        return (
-        <li
-         key={index}
-         onClick={e => handleClick(e, index)}
-         // className={`${active === index ? 'active-work' : ''} work__item`}
+        <FilterItem
+         key={idx}
+         onClick={e => handleClick(e, idx)}
+         className={`${active === idx ? 'active' : ''} `}
         >
          <button>{i.name}</button>
-        </li>
+        </FilterItem>
        );
       })}
-     </ul>
+     </FilterList>
      <List>
       {visibleProjects.map(item => (
        <Item key={item.id}>
