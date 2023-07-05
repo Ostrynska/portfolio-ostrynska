@@ -25,12 +25,18 @@ const Portfolio = () => {
  const [isLoaded, setIsLoaded] = useState(false);
 
  useEffect(() => {
+  setProjects(portfolioData);
+  setVisibleProjects(portfolioData);
+ }, []);
+ console.log('projects', projects);
+
+ useEffect(() => {
   if (filter.name === 'all') {
    setVisibleProjects(projects);
   } else {
    setVisibleProjects(
     projects.filter(
-     item => item.category.toLowerCase() === filter.name.toLowerCase()
+     project => project.category.toLowerCase() === filter.name.toLowerCase()
     )
    );
   }
@@ -40,9 +46,9 @@ const Portfolio = () => {
   window.localStorage.setItem('projects', JSON.stringify(projects));
  }, [projects]);
 
- const handleClick = (e, index) => {
+ const handleClick = (e, idx) => {
   setFilter({ name: e.target.textContent.toLowerCase() });
-  setActive(index);
+  setActive(idx);
  };
 
  console.log(portfolioData);
@@ -54,22 +60,21 @@ const Portfolio = () => {
      <TitleLine />
     </TitleWrapp>
     <Content>
-     <div>
+     <ul>
       {projectFilters.map((i, index) => {
        return (
-        <span
-         onClick={e => handleClick(e, index)}
+        <li
          key={index}
-
+         onClick={e => handleClick(e, index)}
          // className={`${active === index ? 'active-work' : ''} work__item`}
         >
-         {i.name}
-        </span>
+         <button>{i.name}</button>
+        </li>
        );
       })}
-     </div>
+     </ul>
      <List>
-      {portfolioData.map(item => (
+      {visibleProjects.map(item => (
        <Item key={item.id}>
         <div>
          <img src={item.image} alt={item.title} width={150} />
