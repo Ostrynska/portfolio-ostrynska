@@ -11,6 +11,12 @@ import {
  Item,
  FilterList,
  FilterItem,
+ FilterButton,
+ Git,
+ Link,
+ ItemTitleWrap,
+ LinksWrap,
+ Line,
 } from './Portfolio.styled';
 
 const projectFilters = [
@@ -30,7 +36,6 @@ const Portfolio = () => {
   setProjects(portfolioData);
   setVisibleProjects(portfolioData);
  }, []);
- console.log('projects', projects);
 
  useEffect(() => {
   if (filter.name === 'all') {
@@ -53,7 +58,6 @@ const Portfolio = () => {
   setActive(idx);
  };
 
- console.log(portfolioData);
  return (
   <div>
    <Container>
@@ -70,7 +74,7 @@ const Portfolio = () => {
          onClick={e => handleClick(e, idx)}
          className={`${active === idx ? 'active' : ''} `}
         >
-         <button>{i.name}</button>
+         <FilterButton>{i.name}</FilterButton>
         </FilterItem>
        );
       })}
@@ -78,22 +82,23 @@ const Portfolio = () => {
      <List>
       {visibleProjects.map(item => (
        <Item key={item.id}>
-        <div>
-         <img src={item.image} alt={item.title} width={150} />
+        <img src={item.image} alt={item.title} width={250} />
+        <ItemTitleWrap>
          <h2>{item.title}</h2>
-         <p>
-          <strong>Tools:</strong> {item.tools}
-         </p>
-         {item.link !== false && (
+         <LinksWrap>
           <a href={item.link} target="_blank" rel="noreferrer">
-           Demo
+           <Link />
           </a>
-         )}
-         <a href={item.git} target="_blank" rel="noreferrer">
-          Git
-         </a>
-         <p>{item.description}</p>
-        </div>
+          <a href={item.git} target="_blank" rel="noreferrer">
+           <Git />
+          </a>
+         </LinksWrap>
+        </ItemTitleWrap>
+        <Line />
+        <p>{item.description}</p>
+        {/* <p>
+         — built using <strong>{item.tools}</strong>
+        </p> */}
        </Item>
       ))}
      </List>

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 // import { loadFull } from "tsparticles";
 
 import { introdata, particles } from '../../contentOption';
+import CV from '../../assets/Junior Frontend Dev_OstrynskaK.pdf';
 
 import {
  HomeWrapp,
@@ -19,6 +20,7 @@ import {
  ButtonWrapp,
  Button,
  ImageWrapp,
+ Icon,
 } from '../Home/Home.styled';
 
 function Home() {
@@ -78,6 +80,10 @@ function Home() {
     <ImageWrapp>
      <img src={introdata.image} alt="Моє зображення" width={300} />
     </ImageWrapp>
+    <a download="" href={CV}>
+     Download CV
+     <Icon />
+    </a>
    </HomeWrapp>
   </Animate>
  );

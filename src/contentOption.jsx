@@ -1,4 +1,4 @@
-import myImage from './images/myphoto.png';
+import myImage from './assets/myphoto.png';
 
 const meta = {
  title: 'Kateryna Ostrynska',
@@ -230,7 +230,7 @@ const portfolioData = [
   id: '3',
   tools: 'React, Mobile-first, Adaptive design, REST API',
   description:
-   'Personal project of an adaptive website for searching images by keyword and popular images when it loads. For HTTP requests, used the public image search service Pixabay. A modal window with a dark overlay should open on clicking a gallery item and display an image large version. Hovering over an image, shows the author, the number of likes, and the tags by which users can search for similar images.',
+   'Adaptive website for searching images by keyword and popular images when it loads. For HTTP requests, used the public image search service Pixabay. A modal window with a dark overlay should open on clicking a gallery item and display an image large version. Hovering over an image, shows the author, the number of likes, and the tags by which users can search for similar images.',
  },
  {
   image: '',
@@ -241,7 +241,7 @@ const portfolioData = [
   id: '4',
   tools: 'React, Mobile-first, Adaptive design, REST API',
   description:
-   'Personal project of an adaptive website for searching and storing movies. For HTTP requests, the public service themoviedb.org API was used. To create a collection, a list of the most popular movies for today is rendered on the main page. It is also possible to search for a movie by keyword and request full movie information for the movie page (including cast and reviews).',
+   'Adaptive website for searching and storing movies. For HTTP requests, the public service themoviedb.org API was used. To create a collection, a list of the most popular movies for today is rendered on the main page. It is also possible to search for a movie by keyword and request full movie information for the movie page (including cast and reviews).',
  },
  {
   image: '',
@@ -276,7 +276,7 @@ const portfolioData = [
   id: '7',
   tools: 'React Native, Firebase',
   description:
-   'This is a cross-platform (iOS and Android) social media mobile application. The current version of the application allows registered users to submit posts and comments to them. Users can also easily "like" posts and view the location where the photo was taken on the map. Logic has been added so that only the author of the post can take a photo when creating a post, as well as add photos from the smartphone library. When uploading a photo, you can choose a location.',
+   'Cross-platform (iOS and Android) social media mobile application. The current version of the application allows registered users to submit posts and comments to them. Users can also easily "like" posts and view the location where the photo was taken on the map. Logic has been added so that only the author of the post can take a photo when creating a post, as well as add photos from the smartphone library.',
  },
  {
   image:
@@ -288,7 +288,7 @@ const portfolioData = [
   id: '8',
   tools: 'React, ',
   description:
-   'This is a demo real-time chat application project to learn Socket.io (Full Stack Chatting App). The application has been developed taking into account the adaptive layout from mobile devices to desktops and built using React, Node.js. Uses Socket.io for real-time communication and stores user details in encrypted format in Mongo DB Database.',
+   'Demo real-time chat application project to learn Socket.io (Full Stack Chatting App). The application has been developed taking into account the adaptive layout from mobile devices to desktops and built using React, Node.js. Uses Socket.io for real-time communication and stores user details in encrypted format in Mongo DB Database.',
  },
 ];
 

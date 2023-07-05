@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 
 import Particles from 'react-tsparticles';
 
+import { IoDocumentAttachSharp } from 'react-icons/io5';
+
 export const HomeWrapp = styled.div`
  height: 90vh;
  justify-content: center;
@@ -125,3 +127,5 @@ export const ImageWrapp = styled.div`
  justify-content: center;
  padding: 0 20px;
 `;
+
+export const Icon = styled(IoDocumentAttachSharp)``;

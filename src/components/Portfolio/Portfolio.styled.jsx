@@ -1,7 +1,10 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
+
+import { TbBrandGithubFilled } from 'react-icons/tb';
+import { PiMonitorFill } from 'react-icons/pi';
 
 export const Container = styled.div`
- height: 90vh;
+ ${'' /* height: 90vh; */}
  margin-left: auto;
  margin-right: auto;
 
@@ -41,12 +44,50 @@ export const TitleLine = styled.hr`
  opacity: 0.25;
 `;
 
-export const Content = styled.div`
+export const Content = styled.div``;
+
+export const FilterList = styled.ul`
+ align-items: center;
+ column-gap: 0.75rem;
  display: flex;
- flex-wrap: wrap;
+ justify-content: center;
+`;
+
+export const FilterItem = styled.li`
+ background: white;
+ border: 2px solid black;
+ color: black;
+ padding: 4px 19px;
+ transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+ &:hover {
+  color: black;
+  background: transparent;
+  border: 2px solid #bb9d55;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
+
+ &.active {
+  color: #bb9d55;
+  background: transparent;
+  border: 2px solid #bb9d55;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
+`;
+
+export const FilterButton = styled.button`
+ text-transform: capitalize;
+
+ font-family: 'Raleway', sans-serif;
+ font-size: 1rem;
+ font-weight: 400;
+ line-height: 1.5;
+ text-align: center;
 `;
 
 export const List = styled.ul`
+ margin: 50px 0;
+
  display: flex;
  flex-wrap: wrap;
  align-item: center;
@@ -55,19 +96,70 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
- width: 530px;
- height: 285px;
+ display: flex;
+ flex-direction: column;
+ aligh-item: center;
+ box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+ ${'' /* justify-content: center; */}
+ padding: 2rem;
+ border: 1px solid rgba(0, 0, 0, 0.1);
+ height: auto;
+ max-width: 100%;
+ transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+ &:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+   rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+   rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+ img {
+  border-radius: 0.5rem;
+  width: 295px;
+  max-height: 170px;
+ }
  p {
   font-size: 14px;
+  max-width: 295px;
+  margin-top: 1rem;
+  font-family: 'Raleway', sans-serif;
+ }
+ h2 {
+  font-size: 26px;
+  font-weight: 800;
+  font-family: 'Sulphur Point', sans-serif;
  }
 `;
 
-export const FilterList = styled.ul`
- align-items: center;
- column-gap: 0.75rem;
- display: flex;
- justify-content: center;
- margin-bottom: 2rem;
+export const Git = styled(TbBrandGithubFilled)`
+ transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+ &:hover {
+  color: #bb9d55;
+ }
 `;
 
-export const FilterItem = styled.li``;
+export const Link = styled(PiMonitorFill)`
+ transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+ &:hover {
+  color: #bb9d55;
+ }
+`;
+
+export const ItemTitleWrap = styled.div`
+ margin: 20px 0 0 0;
+ display: flex;
+ align-items: center;
+`;
+export const LinksWrap = styled.div`
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ margin-left: auto;
+`;
+
+export const Line = styled.hr`
+ margin: 0.25rem 0;
+
+ border-top: 1px solid #000;
+ opacity: 0.25;
+`;
