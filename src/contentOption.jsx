@@ -1,7 +1,5 @@
 import myImage from './assets/myphoto.png';
 
-import CV from './assets/Junior Frontend Dev_OstrynskaK.pdf';
-
 const meta = {
  title: 'Kateryna Ostrynska',
  description:
@@ -13,7 +11,6 @@ const socials = {
  facebook: 'https://www.facebook.com/ostrynska.k',
  linkedin: 'https://www.linkedin.com/in/kateryna-ostrynska-9155b0151',
  instagram: 'https://www.instagram.com/k_ostrynska',
- cv: { CV },
 };
 
 const navElements = [

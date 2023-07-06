@@ -9,7 +9,6 @@ import {
  Github,
  Instagram,
  Linkedin,
- Download,
 } from './Social.styled';
 
 const Social = params => {
@@ -17,13 +16,6 @@ const Social = params => {
   <>
    <SocialWrapp>
     <SocialList>
-     {socials.cv && (
-      <SocialItem>
-       <a href={socials.cv} download="">
-        <Download />
-       </a>
-      </SocialItem>
-     )}
      {socials.github && (
       <SocialItem>
        <a href={socials.github}>
