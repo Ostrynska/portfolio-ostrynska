@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, useLocation } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 import withRouter from './hooks/withRouter';
 import AppRoutes from './routes';
@@ -26,7 +24,6 @@ const App = () => {
     <AppRoutes />
     <Footer />
    </ScrollToTop>
-   <ToastContainer />
   </Router>
  );
 };

@@ -1,14 +1,11 @@
 import styled, { css } from 'styled-components';
 
-import Particles from 'react-tsparticles';
-
 export const HomeWrapp = styled.div`
  height: 90vh;
  justify-content: center;
  display: flex;
  padding: 0 80px;
  gap: 150px;
- ${'' /* z-index: 1500; */}
 `;
 
 export const HomeMain = styled.div`
@@ -64,14 +61,6 @@ export const Text = styled.p`
  font-family: 'Raleway', sans-serif;
 `;
 
-export const Particle = styled(Particles)`
- position: fixed !important;
- left: 0;
- top: 0;
- width: 100%;
- height: 100%;
-`;
-
 export const ButtonWrapp = styled.div`
  margin-top: 16px;
  ul {
@@ -111,7 +100,6 @@ export const Button = styled.a`
 
    &:hover {
     color: black;
-    ${'' /* color: #bb9d55; */}
     background: transparent;
     border: 2px solid #bb9d55;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
