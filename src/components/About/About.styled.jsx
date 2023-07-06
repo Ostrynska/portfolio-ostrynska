@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 import { GoProjectSymlink, GoLocation, GoThumbsup } from 'react-icons/go';
 import { IoDocumentAttachOutline } from 'react-icons/io5';
+import {
+ VscDebugBreakpointLogUnverified,
+ VscSymbolNamespace,
+ VscDeviceMobile,
+ VscDatabase,
+} from 'react-icons/vsc';
 
 export const Container = styled.div`
  margin-left: auto;
@@ -25,7 +31,7 @@ export const Container = styled.div`
 
 export const TitleWrapp = styled.div`
  margin-top: 2rem;
- mardin-bottom: 4rem;
+ margin-bottom: 4rem;
 `;
 
 export const Title = styled.h1`
@@ -92,6 +98,7 @@ export const AboutMe = styled.div`
   align-items: baseline;
   h2 {
    margin-right: 10px;
+   ${'' /* font-family: 'Sulphur Point', sans-serif; */}
   }
  }
  ul {
@@ -110,7 +117,100 @@ export const AboutMe = styled.div`
    border: 1px solid rgba(0, 0, 0, 0.1);
    height: auto;
    width: 195px;
-   h2 {
+   h3 {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Sulphur Point', sans-serif;
+   }
+   p {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+   }
+  }
+ }
+`;
+
+export const Point = styled(VscDebugBreakpointLogUnverified)`
+ color: #bb9d55;
+`;
+export const SkillsContainer = styled.div`
+ display: flex;
+ justify-content: space-between;
+`;
+
+export const Skills = styled.div`
+ display: flex;
+ gap: 1rem;
+`;
+export const SkillsWrap = styled.div`
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ ${'' /* box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; */}
+ padding: 1.5rem;
+ border: 1px solid rgba(0, 0, 0, 0.1);
+ width: 325px;
+ height: auto;
+ h3 {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Sulphur Point', sans-serif;
+ }
+ ul {
+  margin-top: 20px;
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  li {
+   column-gap: 0.5rem;
+   display: flex;
+   h4 {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+   }
+   span {
+    font-size: 14px;
+   }
+  }
+ }
+`;
+
+export const Namespace = styled(VscSymbolNamespace)`
+ margin-bottom: 1rem;
+ color: #bb9d55;
+`;
+
+export const DeviceMobile = styled(VscDeviceMobile)`
+ margin-bottom: 1rem;
+ color: #bb9d55;
+`;
+
+export const Database = styled(VscDatabase)`
+ margin-bottom: 1rem;
+ color: #bb9d55;
+`;
+
+export const ServicesContainer = styled.div`
+ display: flex;
+ justify-content: space-between;
+ margin: 50px 0;
+ ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  li {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   ${'' /* box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; */}
+   padding: 1.5rem;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   height: auto;
+   width: 195px;
+   h3 {
     font-size: 20px;
     font-weight: 800;
     font-family: 'Sulphur Point', sans-serif;
