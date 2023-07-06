@@ -30,7 +30,7 @@ const Portfolio = () => {
  const [projects, setProjects] = useState([]);
  const [visibleProjects, setVisibleProjects] = useState([]);
  const [active, setActive] = useState(0);
- const [isLoaded, setIsLoaded] = useState(false);
+ //  const [isLoaded, setIsLoaded] = useState(false);
 
  useEffect(() => {
   setProjects(portfolioData);
