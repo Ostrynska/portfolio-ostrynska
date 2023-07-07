@@ -138,8 +138,8 @@ const portfolioData = [
  {
   image: '',
   title: 'Movie Room',
-  link: 'https://ostrynska.github.io/goit-react-hw-05-movies/',
-  git: 'https://github.com/Ostrynska/goit-react-hw-05-movies',
+  link: 'https://hdmovie-room.netlify.app',
+  git: 'https://github.com/Ostrynska/movie-room',
   category: 'personal',
   id: '4',
   tools: 'React, Mobile-first, Adaptive design, REST API',
