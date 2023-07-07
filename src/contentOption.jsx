@@ -125,7 +125,7 @@ const portfolioData = [
  },
  {
   image:
-   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688487254/pixelstock_zhildb.png',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688725147/Screenshot_2023-07-07_at_13.18.28_xakfdf.png',
   title: 'Pixelstock',
   link: 'https://pixelstock.netlify.app/',
   git: 'https://github.com/Ostrynska/pixelstock',
