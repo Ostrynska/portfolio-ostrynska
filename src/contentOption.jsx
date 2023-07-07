@@ -89,7 +89,7 @@ const customModalStyles = {
 const portfolioData = [
  {
   image:
-   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688487254/webstudio_dhuyjl.png',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688725593/Screenshot_2023-07-07_at_13.22.36_pnatnj.png',
   title: 'Web-Studio',
   link: 'https://ostrynska.github.io/project-webstudio/#en',
   git: 'https://github.com/Ostrynska/project-webstudio',
@@ -101,7 +101,7 @@ const portfolioData = [
  },
  {
   image:
-   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688487252/icecream_xmqhor.png',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688725592/Screenshot_2023-07-07_at_13.23.14_hcqumi.png',
   title: 'Ice Cream Shop',
   link: 'https://samusev-anton.github.io/ice-cream-n/',
   git: 'https://github.com/Samusev-Anton/ice-cream-n',
@@ -113,7 +113,7 @@ const portfolioData = [
  },
  {
   image:
-   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688487253/filmoteka_euy0q7.png',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688725594/Screenshot_2023-07-07_at_13.23.55_rvqsnc.png',
   title: 'Filmoteka',
   link: 'https://samusev-anton.github.io/filmoteka',
   git: 'https://github.com/Samusev-Anton/filmoteka',
@@ -160,7 +160,7 @@ const portfolioData = [
  },
  {
   image:
-   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688496762/soyummy_fjz9uf.jpg',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688725594/Screenshot_2023-07-07_at_13.25.17_jmmx8l.png',
   title: 'Recipes - So Yummy',
   link: 'https://4106677.github.io/so-yummy-front-end/',
   git: 'https://github.com/4106677/so-yummy-front-end',
