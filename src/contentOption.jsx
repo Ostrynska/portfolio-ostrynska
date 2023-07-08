@@ -137,7 +137,7 @@ const portfolioData = [
  },
  {
   image:
-   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688724688/1_ckwjnj.png',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1688811303/Screenshot_2023-07-08_at_13.14.46_uqzqyp.png',
   title: 'Movie Room',
   link: 'https://hdmovie-room.netlify.app',
   git: 'https://github.com/Ostrynska/movie-room',
