@@ -148,10 +148,11 @@ const portfolioData = [
    'Adaptive website for searching and storing movies. For HTTP requests, the public service themoviedb.org API was used. To create a collection, a list of the most popular movies for today is rendered on the main page. It is also possible to search for a movie by keyword and request full movie information for the movie page (including cast and reviews).',
  },
  {
-  image: '',
+  image:
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1689235420/Screenshot_2023-07-13_at_10.54.12_dupadq.png',
   title: 'Phonebook',
-  link: 'https://ostrynska.github.io/goit-react-hw-08-phonebook/',
-  git: 'https://github.com/Ostrynska/goit-react-hw-08-phonebook',
+  link: 'https://demo-phonebook.netlify.app',
+  git: 'https://github.com/Ostrynska/phonebook',
   category: 'personal',
   id: '5',
   tools: 'React, Mobile-first, Adaptive design, REST API',
