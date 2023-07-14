@@ -54,7 +54,7 @@ const introdata = {
   third: 'I push myself by learning new things',
  },
  description:
-  'A passionate Frontend Developer from Ukraine, Kyiv. I love coding and developing new things.',
+  'Passionate and motivated Full Stack developer from 📍Ukraine, Kyiv. I love coding and developing new things.',
  image: myImage,
 };
 

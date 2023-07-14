@@ -1,11 +1,16 @@
 import styled, { css } from 'styled-components';
 
 export const HomeWrapp = styled.div`
- height: 90vh;
+ height: 92vh;
  justify-content: center;
  display: flex;
  padding: 0 80px;
- gap: 150px;
+ @media screen and (min-width: 768px) {
+  gap: 25px;
+ }
+ @media screen and (min-width: 1220px) {
+  gap: 150px;
+ }
 `;
 
 export const HomeMain = styled.div`
@@ -63,13 +68,20 @@ export const Text = styled.p`
 
 export const ButtonWrapp = styled.div`
  margin-top: 16px;
+
  ul {
   display: flex;
   gap: 20px;
+  @media screen and (max-width: 436px) {
+   flex-wrap: wrap;
+   gap: 5px;
+  }
  }
 `;
 
 export const Button = styled.a`
+min-width: 130px;
+
  background: black;
  border-radius: 0px;
  border: 2px solid black;
@@ -108,8 +120,11 @@ export const Button = styled.a`
 `;
 
 export const ImageWrapp = styled.div`
- display: flex;
- flex-direction: column;
- justify-content: center;
- padding: 0 20px;
+ display: none;
+ @media screen and (min-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+ }
 `;

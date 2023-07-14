@@ -8,4 +8,9 @@ export const FooterWrapp = styled(Container)`
  font-size: medium;
  color: black;
  ${'' /* color: rgb(202, 200, 200); */}
+ p {
+  @media screen and (max-width: 436px) {
+   font-size: 14px;
+  }
+ }
 `;
