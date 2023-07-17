@@ -32,6 +32,18 @@ const navElements = [
  },
 ];
 
+const introdata = {
+ title: 'I’m Kateryna Ostrynska',
+ animated: {
+  first: 'I love coding',
+  second: 'Currently learning TypeScript, NodeJS',
+  third: 'I push myself by learning new things',
+ },
+ description:
+  'Passionate and motivated Full-Stack developer from 📍Kyiv, Ukraine. I love coding and developing new things.',
+ image: myImage,
+};
+
 const skillsList = [
  { type: 'front', name: 'HTML', level: 'Intermediate' },
  { type: 'front', name: 'CSS', level: 'Intermediate' },
@@ -45,18 +57,6 @@ const skillsList = [
  { type: 'back', name: 'MongoDB', level: 'Basic' },
  { type: 'back', name: 'Postman', level: 'Intermediate' },
 ];
-
-const introdata = {
- title: 'I’m Kateryna Ostrynska',
- animated: {
-  first: 'I love coding',
-  second: 'Currently learning TypeScript, NodeJS',
-  third: 'I push myself by learning new things',
- },
- description:
-  'Passionate and motivated Full Stack developer from 📍Ukraine, Kyiv. I love coding and developing new things.',
- image: myImage,
-};
 
 const contactConfig = {
  YOUR_EMAIL: 'ostrynska.kateryna@gmail.com',
