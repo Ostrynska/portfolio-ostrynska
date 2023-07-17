@@ -100,7 +100,6 @@ export const Item = styled.li`
  flex-direction: column;
  aligh-item: center;
  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
- ${'' /* justify-content: center; */}
  padding: 2rem;
  border: 1px solid rgba(0, 0, 0, 0.1);
  height: auto;
@@ -120,11 +119,11 @@ export const Item = styled.li`
  p {
   font-size: 14px;
   max-width: 295px;
-  margin-top: 1rem;
+  margin: 1rem 0 0.5rem 0;
   font-family: 'Raleway', sans-serif;
  }
  h2 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 800;
   font-family: 'Sulphur Point', sans-serif;
  }
@@ -155,6 +154,10 @@ export const LinksWrap = styled.div`
  justify-content: center;
  gap: 10px;
  margin-left: auto;
+ a {
+  display: flex;
+  justify-content: center;
+ }
 `;
 
 export const Line = styled.hr`
@@ -162,4 +165,22 @@ export const Line = styled.hr`
 
  border-top: 1px solid #000;
  opacity: 0.25;
+`;
+
+export const Tools = styled.ul`
+ margin-top: auto;
+ li {
+  display: flex;
+  gap: 10px;
+  img {
+   max-width: 20px;
+   height: 20px;
+  }
+ }
+`;
+
+export const Image = styled.div`
+ height: 170px;
+ display: flex;
+ align-items: center;
 `;

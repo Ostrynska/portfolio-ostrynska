@@ -17,6 +17,8 @@ import {
  ItemTitleWrap,
  LinksWrap,
  Line,
+ Tools,
+ Image,
 } from './Portfolio.styled';
 
 const projectFilters = [
@@ -82,23 +84,29 @@ const Portfolio = () => {
      <List>
       {visibleProjects.map(item => (
        <Item key={item.id}>
-        <img src={item.image} alt={item.title} width={250} />
+        <Image>
+         <img src={item.image} alt={item.title} width={250} />
+        </Image>
         <ItemTitleWrap>
          <h2>{item.title}</h2>
          <LinksWrap>
           <a href={item.link} target="_blank" rel="noreferrer">
-           <Link />
+           <Link size={20} />
           </a>
           <a href={item.git} target="_blank" rel="noreferrer">
-           <Git />
+           <Git size={20} />
           </a>
          </LinksWrap>
         </ItemTitleWrap>
         <Line />
         <p>{item.description}</p>
-        {/* <p>
-         — built using <strong>{item.tools}</strong>
-        </p> */}
+        <Tools>
+         <li key={item.id}>
+          {item.tools.map((tool, index) => (
+           <img key={index} src={tool} alt="Logo tool" />
+          ))}
+         </li>
+        </Tools>
        </Item>
       ))}
      </List>

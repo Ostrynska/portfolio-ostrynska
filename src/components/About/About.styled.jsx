@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { GoProjectSymlink, GoLocation, GoThumbsup } from 'react-icons/go';
 import { IoDocumentAttachOutline } from 'react-icons/io5';
 import {
- VscDebugBreakpointLogUnverified,
  VscSymbolNamespace,
  VscDeviceMobile,
  VscDatabase,
@@ -27,6 +26,13 @@ export const Container = styled.div`
  @media screen and (min-width: 1400px) {
   max-width: 1200px;
  }
+`;
+
+export const Image = styled.img`
+ height: 30px;
+ max-width: 100%;
+ display: flex;
+ justify-content: center;
 `;
 
 export const TitleWrapp = styled.div`
@@ -98,21 +104,17 @@ export const AboutMe = styled.div`
   align-items: baseline;
   h2 {
    margin-right: 10px;
-   ${'' /* font-family: 'Sulphur Point', sans-serif; */}
   }
  }
  ul {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   gap: 40px;
   li {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   ${'' /* box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; */}
    padding: 1.5rem;
    border: 1px solid rgba(0, 0, 0, 0.1);
    height: auto;
@@ -130,9 +132,6 @@ export const AboutMe = styled.div`
  }
 `;
 
-export const Point = styled(VscDebugBreakpointLogUnverified)`
- color: #bb9d55;
-`;
 export const SkillsContainer = styled.div`
  display: flex;
  justify-content: space-between;
@@ -158,18 +157,19 @@ export const SkillsWrap = styled.div`
  }
  ul {
   margin-top: 20px;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   li {
    column-gap: 0.5rem;
    display: flex;
+   align-items: center;
    h4 {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
    }
    span {
-    font-size: 14px;
+    font-size: 12px;
    }
   }
  }

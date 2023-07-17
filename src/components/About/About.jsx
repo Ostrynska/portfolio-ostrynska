@@ -14,7 +14,6 @@ import {
  Experience,
  AboutMe,
  Document,
- Point,
  SkillsContainer,
  Skills,
  SkillsWrap,
@@ -22,12 +21,15 @@ import {
  Database,
  DeviceMobile,
  ServicesContainer,
+ Image,
 } from './About.styled';
 
 const About = () => {
  const getSkills = type => {
   return skillsList.filter(i => i.type === type);
  };
+
+ console.log(skillsList.name);
 
  return (
   <div>
@@ -68,11 +70,11 @@ const About = () => {
        <SkillsWrap>
         <h3>Frontend Developer</h3>
         <ul>
-         {getSkills('front').map(({ name, level }) => (
+         {getSkills('front').map(({ name, level, title }) => (
           <li key={nanoid(2)}>
-           <Point />
+           <Image src={name} alt={title} />
            <div>
-            <h4>{name}</h4>
+            <h4>{title}</h4>
             <span>{level}</span>
            </div>
           </li>
@@ -82,11 +84,11 @@ const About = () => {
        <SkillsWrap>
         <h3>Backend Developer</h3>
         <ul>
-         {getSkills('back').map(({ name, level }) => (
+         {getSkills('back').map(({ name, level, title }) => (
           <li key={nanoid(2)}>
-           <Point />
+           <Image src={name} alt={title} />
            <div>
-            <h4>{name}</h4>
+            <h4>{title}</h4>
             <span>{level}</span>
            </div>
           </li>
