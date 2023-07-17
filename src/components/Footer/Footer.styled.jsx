@@ -7,7 +7,9 @@ export const FooterWrapp = styled(Container)`
  text-align: center;
  font-size: medium;
  color: black;
- ${'' /* color: rgb(202, 200, 200); */}
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
  p {
   @media screen and (max-width: 436px) {
    font-size: 14px;

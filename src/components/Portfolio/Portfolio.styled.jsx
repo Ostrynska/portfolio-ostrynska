@@ -87,12 +87,16 @@ export const FilterButton = styled.button`
 
 export const List = styled.ul`
  margin: 50px 0;
+ padding: 0 0 0 50px;
 
  display: flex;
  flex-wrap: wrap;
  align-item: center;
  justify-content: center;
  gap: 40px;
+ @media screen and (min-width: 576px) {
+  padding: 0;
+ }
 `;
 
 export const Item = styled.li`
@@ -100,12 +104,14 @@ export const Item = styled.li`
  flex-direction: column;
  aligh-item: center;
  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
- padding: 2rem;
+ padding: 1.5rem;
  border: 1px solid rgba(0, 0, 0, 0.1);
  height: auto;
  max-width: 100%;
  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-
+ @media screen and (min-width: 576px) {
+  padding: 2rem;
+ }
  &:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,

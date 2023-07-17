@@ -96,12 +96,26 @@ export const Document = styled(IoDocumentAttachOutline)`
 
 export const AboutMe = styled.div`
  display: flex;
- align-items: center;
+ flex-direction: column;
+
  justify-content: space-between;
  margin: 50px 0;
+ gap: 0;
+ @media screen and (max-width: 980px) {
+  gap: 20px;
+ }
+ @media screen and (min-width: 992px) {
+  flex-direction: row;
+  align-items: center;
+ }
  div {
   display: flex;
   align-items: baseline;
+
+  @media screen and (max-width: 980px) {
+   justify-content: center;
+  }
+  justify-content: start;
   h2 {
    margin-right: 10px;
   }
@@ -109,7 +123,20 @@ export const AboutMe = styled.div`
  ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 10px;
+  justify-content: center;
+  @media screen and (min-width: 420px) and (max-width: 540px) {
+   padding: 0 0 0 40px;
+  }
+  @media screen and (min-width: 541px) {
+   padding: 0;
+  }
+  @media screen and (min-width: 992px) {
+   gap: 10px;
+  }
+  @media screen and (min-width: 1400px) {
+   gap: 40px;
+  }
   li {
    display: flex;
    flex-direction: column;
@@ -134,21 +161,39 @@ export const AboutMe = styled.div`
 
 export const SkillsContainer = styled.div`
  display: flex;
+ flex-direction: column;
+ align-items: center;
  justify-content: space-between;
+ margin: 50px 0;
+ gap: 0;
+ @media screen and (max-width: 980px) {
+  gap: 20px;
+ }
+ @media screen and (min-width: 992px) {
+  flex-direction: row;
+  align-items: center;
+ }
 `;
 
 export const Skills = styled.div`
  display: flex;
+ flex-direction: column;
  gap: 1rem;
+ @media screen and (min-width: 992px) {
+  flex-direction: row;
+ }
 `;
 export const SkillsWrap = styled.div`
  display: flex;
  flex-direction: column;
  align-items: center;
- ${'' /* box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; */}
  padding: 1.5rem;
  border: 1px solid rgba(0, 0, 0, 0.1);
- width: 325px;
+
+ width: 294px;
+ @media screen and (min-width: 1400px) {
+  width: 325px;
+ }
  height: auto;
  h3 {
   font-size: 20px;
@@ -192,14 +237,44 @@ export const Database = styled(VscDatabase)`
 
 export const ServicesContainer = styled.div`
  display: flex;
+ flex-direction: column;
+
  justify-content: space-between;
  margin: 50px 0;
+ gap: 0;
+ @media screen and (max-width: 980px) {
+  gap: 20px;
+ }
+ @media screen and (min-width: 992px) {
+  flex-direction: row;
+  align-items: center;
+ }
+ h2 {
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (max-width: 980px) {
+   justify-content: center;
+  }
+  justify-content: start;
+ }
  ul {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  gap: 10px;
   justify-content: center;
-  gap: 40px;
+  @media screen and (min-width: 420px) and (max-width: 540px) {
+   padding: 0 0 0 40px;
+  }
+  @media screen and (min-width: 541px) {
+   padding: 0;
+  }
+  @media screen and (min-width: 992px) {
+   gap: 10px;
+  }
+  @media screen and (min-width: 1400px) {
+   gap: 40px;
+  }
   li {
    display: flex;
    flex-direction: column;
