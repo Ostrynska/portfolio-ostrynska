@@ -76,7 +76,7 @@ export const MenuList = styled.ul`
  flex-direction: column;
  gap: 20px;
  @media screen and (max-width: 992px) {
-  padding-top: 20vh;
+  padding-top: 10vh;
  }
 `;
 
