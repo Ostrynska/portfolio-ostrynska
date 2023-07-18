@@ -32,7 +32,6 @@ export const BurgerMenuStyles = {
   flexDirection: 'column',
   alignItems: 'center',
   textAlign: 'center',
-  paddingTop: '50px',
   marginTop: '0px',
   position: 'absolute',
   width: '100%',
@@ -62,21 +61,22 @@ export const Menu = styled.div`
  width: 100%;
  height: 100%;
  overflow: hidden auto;
+ overflow-y: ${({ isOpen }) => (isOpen ? 'hidden' : 'auto')};
 `;
 
 export const Open = styled(RxHamburgerMenu)``;
 export const Close = styled(VscClose)``;
 
 export const MenuList = styled.ul`
- padding-top: 20vh;
- padding-bottom: 20vh;
+ padding-top: 23vh;
  padding-left: 0;
  display: flex !important;
+ align-items: center;
+ justify-content: center;
  flex-direction: column;
  gap: 20px;
- @media screen and (min-width: 992px) {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+ @media screen and (max-width: 992px) {
+  padding-top: 20vh;
  }
 `;
 

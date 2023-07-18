@@ -112,7 +112,7 @@ const Contact = () => {
  };
 
  return (
-  <div>
+  <>
    <Modal
     isOpen={formData.modalOpen}
     onRequestClose={closeModal}
@@ -193,7 +193,7 @@ const Contact = () => {
     </Content>
    </Container>
    <div className={formData.loading ? 'loading-bar' : 'd-none'}></div>
-  </div>
+  </>
  );
 };
 

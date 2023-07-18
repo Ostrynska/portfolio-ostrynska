@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaGithub, FaInstagram, FaFacebookF, FaLinkedin } from 'react-icons/fa';
 
 export const SocialWrapp = styled.div`
- top: 50%;
+ top: 50vh;
  left: 30px;
  width: 20px;
  height: 200px;

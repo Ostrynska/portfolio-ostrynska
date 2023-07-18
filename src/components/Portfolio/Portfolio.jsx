@@ -61,58 +61,56 @@ const Portfolio = () => {
  };
 
  return (
-  <div>
-   <Container>
-    <TitleWrapp>
-     <Title>Portfolio</Title>
-     <TitleLine />
-    </TitleWrapp>
-    <Content>
-     <FilterList>
-      {projectFilters.map((i, idx) => {
-       return (
-        <FilterItem
-         key={idx}
-         onClick={e => handleClick(e, idx)}
-         className={`${active === idx ? 'active' : ''} `}
-        >
-         <FilterButton>{i.name}</FilterButton>
-        </FilterItem>
-       );
-      })}
-     </FilterList>
-     <List>
-      {visibleProjects.map(item => (
-       <Item key={item.id}>
-        <Image>
-         <img src={item.image} alt={item.title} width={250} />
-        </Image>
-        <ItemTitleWrap>
-         <h2>{item.title}</h2>
-         <LinksWrap>
-          <a href={item.link} target="_blank" rel="noreferrer">
-           <Link size={20} />
-          </a>
-          <a href={item.git} target="_blank" rel="noreferrer">
-           <Git size={20} />
-          </a>
-         </LinksWrap>
-        </ItemTitleWrap>
-        <Line />
-        <p>{item.description}</p>
-        <Tools>
-         <li key={item.id}>
-          {item.tools.map((tool, index) => (
-           <img key={index} src={tool} alt="Logo tool" />
-          ))}
-         </li>
-        </Tools>
-       </Item>
-      ))}
-     </List>
-    </Content>
-   </Container>
-  </div>
+  <Container>
+   <TitleWrapp>
+    <Title>Portfolio</Title>
+    <TitleLine />
+   </TitleWrapp>
+   <Content>
+    <FilterList>
+     {projectFilters.map((i, idx) => {
+      return (
+       <FilterItem
+        key={idx}
+        onClick={e => handleClick(e, idx)}
+        className={`${active === idx ? 'active' : ''} `}
+       >
+        <FilterButton>{i.name}</FilterButton>
+       </FilterItem>
+      );
+     })}
+    </FilterList>
+    <List>
+     {visibleProjects.map(item => (
+      <Item key={item.id}>
+       <Image>
+        <img src={item.image} alt={item.title} width={250} />
+       </Image>
+       <ItemTitleWrap>
+        <h2>{item.title}</h2>
+        <LinksWrap>
+         <a href={item.link} target="_blank" rel="noreferrer">
+          <Link size={20} />
+         </a>
+         <a href={item.git} target="_blank" rel="noreferrer">
+          <Git size={20} />
+         </a>
+        </LinksWrap>
+       </ItemTitleWrap>
+       <Line />
+       <p>{item.description}</p>
+       <Tools>
+        <li key={item.id}>
+         {item.tools.map((tool, index) => (
+          <img key={index} src={tool} alt="Logo tool" />
+         ))}
+        </li>
+       </Tools>
+      </Item>
+     ))}
+    </List>
+   </Content>
+  </Container>
  );
 };
 

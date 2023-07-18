@@ -25,33 +25,30 @@ const Header = () => {
   setMenuOpen(false);
  };
  return (
-  <>
-   <HeaderStyled>
-    <div>
-     {/* <Themetoggle /> */}
-     <BurgerMenuContainer>
-      <Menu
-       customBurgerIcon={<Open />}
-       customCrossIcon={<Close />}
-       right
-       isOpen={menuOpen}
-       onStateChange={state => handleStateChange(state)}
-       styles={BurgerMenuStyles}
-      >
-       <MenuList>
-        {navElements.map(({ to, name }) => (
-         <MenuItem key={to}>
-          <MenuLink to={to} onClick={() => closeMenu()}>
-           {name}
-          </MenuLink>
-         </MenuItem>
-        ))}
-       </MenuList>
-      </Menu>
-     </BurgerMenuContainer>
-    </div>
-   </HeaderStyled>
-  </>
+  <HeaderStyled>
+   <div>
+    <BurgerMenuContainer>
+     <Menu
+      customBurgerIcon={<Open />}
+      customCrossIcon={<Close />}
+      right
+      isOpen={menuOpen}
+      onStateChange={state => handleStateChange(state)}
+      styles={BurgerMenuStyles}
+     >
+      <MenuList>
+       {navElements.map(({ to, name }) => (
+        <MenuItem key={to}>
+         <MenuLink to={to} onClick={() => closeMenu()}>
+          {name}
+         </MenuLink>
+        </MenuItem>
+       ))}
+      </MenuList>
+     </Menu>
+    </BurgerMenuContainer>
+   </div>
+  </HeaderStyled>
  );
 };
 
