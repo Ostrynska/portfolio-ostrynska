@@ -176,6 +176,7 @@ export const Input = styled.input`
 `;
 
 export const InputStyled = styled.textarea`
+ resize: none;
  min-height: calc(1.5em + 0.75rem + 2px);
  margin-bottom: 1em;
 
