@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 
 import withRouter from './hooks/withRouter';
-import AppRoutes from './routes';
 import './App.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Loader from './components/Loader/Loader';
+
+const AppRoutes = lazy(() => import('./routes'));
+const Header = lazy(() => import('./components/Header/Header'));
+const Footer = lazy(() => import('./components/Footer/Footer'));
 
 function _ScrollToTop(props) {
  const { pathname } = useLocation();
@@ -17,12 +20,30 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 const App = () => {
+ const [loading, setLoading] = useState(true);
+
+ useEffect(() => {
+  const delay = 3000;
+  const timer = setTimeout(() => {
+   setLoading(false);
+  }, delay);
+  return () => clearTimeout(timer);
+ }, []);
+
  return (
   <Router>
    <ScrollToTop>
-    <Header />
-    <AppRoutes />
-    <Footer />
+    <Suspense fallback={<Loader />}>
+     {loading ? (
+      <Loader />
+     ) : (
+      <>
+       <Header />
+       <AppRoutes />
+       <Footer />
+      </>
+     )}
+    </Suspense>
    </ScrollToTop>
   </Router>
  );
