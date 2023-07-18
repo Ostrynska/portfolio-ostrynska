@@ -140,9 +140,14 @@ export const Form = styled.form`
 
 export const FormInputs = styled.div`
  display: flex;
+ flex-direction: column;
  margin-top: calc(1.5rem * -1);
  margin-bottom: 1em;
- gap: calc((1.5rem * 0.5) * 2);
+ gap: calc((0.5rem * 0.5) * 2);
+ @media screen and (min-width: 480px) {
+  flex-direction: row;
+  gap: calc((1.5rem * 0.5) * 2);
+ }
 `;
 
 export const Input = styled.input`
