@@ -1,6 +1,7 @@
+import React, { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid';
 
-import { skillsList } from '../../contentOption';
+import { skillsList, portfolioData } from '../../contentOption';
 import CV from '../../assets/Junior Frontend Dev_OstrynskaK.pdf';
 
 import {
@@ -25,11 +26,23 @@ import {
 } from './About.styled';
 
 const About = () => {
+ const [yearsOfExperience, setYearsOfExperience] = useState(0);
+
+ useEffect(() => {
+  const currentDate = new Date();
+  const startDate = new Date('2022-05-18');
+  const timeDifference = currentDate - startDate;
+
+  const years = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 365));
+
+  setYearsOfExperience(years);
+ }, []);
+
+ const completedProjects = portfolioData.length;
+
  const getSkills = type => {
   return skillsList.filter(i => i.type === type);
  };
-
- console.log(skillsList.name);
 
  return (
   <div>
@@ -50,12 +63,12 @@ const About = () => {
        <li>
         <Experience size={26} />
         <h3>Experience</h3>
-        <p>1 + Years Working</p>
+        <p>{yearsOfExperience}+ Years Working</p>
        </li>
        <li>
         <Projects size={26} />
         <h3>Completed</h3>
-        <p>10 + Projects</p>
+        <p>{completedProjects} Projects</p>
        </li>
        <li>
         <Location size={26} />
