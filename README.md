@@ -4,8 +4,9 @@ A fully responsive personal portfolio website, responsive for all devices, built
 
 ## Demo
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+<p align="center">
+  <img src="https://res.cloudinary.com/dcjlswtup/image/upload/v1689684800/Screen_Recording_2023-07-18_at_15.42.30_1_r245ra.gif" alt="Desktop Demo">
+</p>
 
 ## Features
 
