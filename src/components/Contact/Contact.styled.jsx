@@ -44,13 +44,43 @@ export const TitleLine = styled.hr`
 export const Content = styled.div`
  display: flex;
  flex-wrap: wrap;
+ flex-direction: column;
+ gap: 50px;
+ padding: 0 0 0 60px;
+ @media screen and (min-width: 580px) and (max-width: 629px) {
+  padding: 0 0 0 40px;
+ }
+ @media screen and (min-width: 630px) and (max-width: 679px) {
+  padding: 0 0 0 20px;
+ }
+ @media screen and (min-width: 680px) {
+  padding: 0;
+ }
+ @media screen and (min-width: 768px) and (max-width: 850px) {
+  padding: 0 0 0 40px;
+ }
+ @media screen and (min-width: 992px) {
+  flex-direction: row;
+  gap: 0;
+ }
+ @media screen and (min-width: 992px) and (max-width: 1000px) {
+  padding: 0 0 0 60px;
+ }
+ @media screen and (min-width: 1001px) and (max-width: 1099px) {
+  padding: 0 0 0 40px;
+ }
+ @media screen and (min-width: 1100px) {
+  padding: 0;
+ }
 `;
 
 export const TextWrapp = styled.div`
- width: 41.66666667%;
  max-width: 100%;
  padding-left: calc(0 * 0.5);
  padding-right: calc(0 * 0.5);
+ @media screen and (min-width: 992px) {
+  width: 41.66666667%;
+ }
 `;
 
 export const TextWrappTitle = styled.h2`
@@ -95,11 +125,13 @@ export const Text = styled.p`
 
 export const FormWrapp = styled.div`
  display: flex;
- width: 58.33333333%;
  max-width: 100%;
  align-items: flex-end;
- padding-left: calc((1.5rem * 0.5) * 4);
- ${'' /* padding-right: calc(1.5rem * 0.5); */}
+ padding-left: 0;
+ @media screen and (min-width: 992px) {
+  padding-left: calc((1.5rem * 0.5) * 4);
+  width: 58.33333333%;
+ }
 `;
 
 export const Form = styled.form`
