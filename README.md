@@ -10,10 +10,10 @@ A fully responsive for all devices personal portfolio website, built using HTML,
 
 ## Features
 
-Fully Responsive
-Multi-Page Layout
-Contact Form With EmailJs
-Edit Content From One Place
+* Fully Responsive
+* Multi-Page Layout
+* Contact Form With EmailJs
+* Edit Content From One Place
 
 ## Contact
 
