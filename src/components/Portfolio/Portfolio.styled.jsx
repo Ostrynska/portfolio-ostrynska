@@ -4,7 +4,7 @@ import { TbBrandGithubFilled } from 'react-icons/tb';
 import { PiMonitorFill } from 'react-icons/pi';
 
 export const Container = styled.div`
- ${'' /* height: 90vh; */}
+ min-height: 90vh;
  margin-left: auto;
  margin-right: auto;
 

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const HomeWrapp = styled.div`
- height: 92vh;
+ height: 93vh;
  justify-content: center;
  display: flex;
  padding: 0 80px;
