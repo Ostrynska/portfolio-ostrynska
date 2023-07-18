@@ -17,3 +17,7 @@ Edit Content From One Place
 ## Contact
 
 If you want to contact me you can reach me at [LinkedIn](https://www.linkedin.com/in/kateryna-ostrynska-9155b0151/).
+
+## Thanks
+
+If you like this portfolio template don't forget to give it a ⭐
