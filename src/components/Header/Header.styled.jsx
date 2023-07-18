@@ -32,7 +32,7 @@ export const BurgerMenuStyles = {
   flexDirection: 'column',
   alignItems: 'center',
   textAlign: 'center',
-  paddingTop: '125px',
+  paddingTop: '50px',
   marginTop: '0px',
   position: 'absolute',
   width: '100%',
@@ -54,8 +54,7 @@ export const HeaderStyled = styled.header`
  padding: 30px;
  flex-wrap: wrap;
  transition: all 0.2s ease;
- ${'' /* gap: 15px; */}
- background-color: #FFF;
+ background-color: #fff;
 `;
 
 export const Menu = styled.div`
