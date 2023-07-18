@@ -1,11 +1,11 @@
 # Kateryna Ostrynska - Personal portfolio
 
-A fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+A fully responsive for all devices personal portfolio website, built using HTML, CSS, and JavaScript.
 
 ## Demo
 
 <p align="center">
-  <img src="https://res.cloudinary.com/dcjlswtup/image/upload/v1689684800/Screen_Recording_2023-07-18_at_15.42.30_1_r245ra.gif" alt="Desktop Demo">
+  <img src="https://res.cloudinary.com/dcjlswtup/image/upload/v1689685618/Screen_Recording_2023-07-18_at_15.56.36_1_ugr4d8.gif" alt="Desktop Demo">
 </p>
 
 ## Features
