@@ -185,8 +185,14 @@ export const Tools = styled.ul`
  }
 `;
 
-export const Image = styled.div`
+export const Image = styled.a`
  height: 170px;
  display: flex;
  align-items: center;
+ img {
+  transition: transform 0.15s ease-in-out;
+  &:hover {
+   transform: scale(1.05);
+  }
+ }
 `;

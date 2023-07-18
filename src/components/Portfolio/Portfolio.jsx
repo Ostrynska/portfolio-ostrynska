@@ -83,7 +83,7 @@ const Portfolio = () => {
     <List>
      {visibleProjects.map(item => (
       <Item key={item.id}>
-       <Image>
+       <Image href={item.link} target="_blank" rel="noreferrer">
         <img src={item.image} alt={item.title} width={250} />
        </Image>
        <ItemTitleWrap>
