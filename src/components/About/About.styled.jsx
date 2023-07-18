@@ -97,7 +97,7 @@ export const Document = styled(IoDocumentAttachOutline)`
 export const AboutMe = styled.div`
  display: flex;
  flex-direction: column;
-
+ align-items: center;
  justify-content: space-between;
  margin: 50px 0;
  gap: 0;
@@ -106,7 +106,7 @@ export const AboutMe = styled.div`
  }
  @media screen and (min-width: 992px) {
   flex-direction: row;
-  align-items: center;
+  align-items: start;
  }
  div {
   display: flex;
@@ -206,6 +206,9 @@ export const SkillsWrap = styled.div`
  @media screen and (max-width: 540px) {
   padding: 1rem;
  }
+ @media screen and (min-width: 992px) {
+  align-items: start;
+ }
  @media screen and (min-width: 1400px) {
   width: 325px;
  }
@@ -265,7 +268,7 @@ export const ServicesContainer = styled.div`
  }
  @media screen and (min-width: 992px) {
   flex-direction: row;
-  align-items: center;
+  align-items: start;
  }
  h2 {
   display: flex;
