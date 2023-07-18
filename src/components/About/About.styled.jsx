@@ -179,6 +179,18 @@ export const Skills = styled.div`
  display: flex;
  flex-direction: column;
  gap: 1rem;
+ @media screen and (max-width: 380px) {
+  padding: 0 0 0 82px;
+ }
+ @media screen and (min-width: 381px) and (max-width: 450px) {
+  padding: 0 0 0 52px;
+ }
+ @media screen and (min-width: 451px) {
+  padding: 0 0 0 30px;
+ }
+ @media screen and (min-width: 540px) {
+  padding: 0;
+ }
  @media screen and (min-width: 992px) {
   flex-direction: row;
  }
@@ -191,6 +203,9 @@ export const SkillsWrap = styled.div`
  border: 1px solid rgba(0, 0, 0, 0.1);
 
  width: 294px;
+ @media screen and (max-width: 540px) {
+  padding: 1rem;
+ }
  @media screen and (min-width: 1400px) {
   width: 325px;
  }
@@ -205,6 +220,9 @@ export const SkillsWrap = styled.div`
   grid-gap: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 540px) {
+   grid-gap: 1rem;
+  }
   li {
    column-gap: 0.5rem;
    display: flex;
