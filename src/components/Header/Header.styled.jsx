@@ -42,7 +42,7 @@ export const BurgerMenuStyles = {
 };
 
 export const HeaderStyled = styled.header`
- position: sticky;
+ ${'' /* position: sticky; */}
  top: 0;
  z-index: 2;
  left: 0;
