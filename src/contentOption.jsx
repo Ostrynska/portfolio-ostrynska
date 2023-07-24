@@ -112,7 +112,7 @@ const portfolioData = [
   id: '8',
   tools: [react, mongo, api],
   description:
-   'Demo real-time chat application project to learn Socket.io (full stack chatting app). The application is built using React, Node.js, uses Socket.io for real-time communication, and stores user details in encrypted format in Mongo DB Database.',
+   'Demo real-time chat application project to learn Socket.io (full stack chatting app). The application is built using React, Node.js, Socket.io for real-time communication, and stores user details in encrypted format in Mongo DB Database.',
  },
  {
   image:
