@@ -32,7 +32,7 @@ export const BurgerMenuStyles = {
   flexDirection: 'column',
   alignItems: 'center',
   textAlign: 'center',
-  marginTop: '0px',
+  marginTop: '-30px',
   position: 'absolute',
   width: '100%',
  },
