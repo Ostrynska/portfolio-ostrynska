@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Container } from 'react-bootstrap';
 
 export const FooterWrapp = styled(Container)`
+ margin-bottom: auto;
  font-family: 'Sulphur Point', sans-serif;
  text-align: center;
  font-size: medium;
