@@ -11,7 +11,7 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   font-family: 'Raleway', sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 html {
