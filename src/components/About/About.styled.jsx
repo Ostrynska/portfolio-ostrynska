@@ -9,7 +9,7 @@ import {
 } from 'react-icons/vsc';
 
 export const Container = styled.div`
- height: 90vh;
+ min-height: 90vh;
  margin-left: auto;
  margin-right: auto;
 

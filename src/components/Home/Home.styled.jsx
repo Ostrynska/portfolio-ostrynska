@@ -1,13 +1,14 @@
 import styled, { css } from 'styled-components';
 
 export const HomeWrapp = styled.div`
- margin: 150px 0 150px;
+ ${'' /* margin: 150px 0 150px; */}
+ min-height: 92vh;
  justify-content: center;
  display: flex;
  padding: 0 80px;
  @media screen and (min-width: 768px) {
   margin: 0;
-  height: 92vh;
+  min-height: 92vh;
   gap: 25px;
  }
  @media screen and (min-width: 1220px) {
