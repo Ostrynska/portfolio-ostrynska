@@ -14,6 +14,8 @@ import redux from './images/redux.png';
 import sass from './images/sass.png';
 import api from './images/api.png';
 import parcel from './images/parcel.png';
+import mui from './images/mui.png';
+import bootstrap from './images/bootstrap.png';
 
 const meta = {
  title: 'Kateryna Ostrynska',
@@ -102,18 +104,18 @@ const customModalStyles = {
 };
 
 const portfolioData = [
- //  {
- //   image:
- //    'https://res.cloudinary.com/dcjlswtup/image/upload/v1688496769/primechart_zd7kek.png',
- //   title: 'Prime Chat',
- //   link: 'https://prime-chat.netlify.app/',
- //   git: 'https://github.com/Ostrynska/prime-chat',
- //   category: 'personal',
- //   id: '8',
- //   tools: [react, mongo, api],
- //   description:
- //    'Demo real-time chat application project to learn Socket.io (full stack chatting app). The application is built using React, Node.js, Socket.io for real-time communication, and stores user details in encrypted format in Mongo DB Database.',
- //  },
+ {
+  image:
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1690746585/Screenshot_2023-07-30_at_22.48.43_hrtnpy.png',
+  title: 'Vanilla JS Notes App',
+  link: 'note-app-airn.onrender.com/',
+  git: 'https://github.com/Ostrynska/notes-app',
+  category: 'personal',
+  id: '9',
+  tools: [html, css, js, bootstrap],
+  description:
+   'A notes taking app made with vanilla javascript. Users can add, edit and remove notes. A list of notes is displayed as a table. Archived notes are not shown in the notes list. Users can view archived notes and unarchive them.',
+ },
  {
   image:
    'https://res.cloudinary.com/dcjlswtup/image/upload/v1688496769/primechart_zd7kek.png',
@@ -158,7 +160,7 @@ const portfolioData = [
   git: 'https://github.com/Ostrynska/phonebook',
   category: 'personal',
   id: '5',
-  tools: [react, redux, mongo],
+  tools: [react, redux, mongo, mui],
   description:
    'Phonebook app that allows registration, login, and updating of users contacts, as well as working with a private collection of contacts.',
  },

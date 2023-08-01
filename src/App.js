@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
+import ScrollToTop from 'react-scroll-to-top';
 
 import withRouter from './hooks/withRouter';
 import './App.css';
@@ -17,7 +18,7 @@ function _ScrollToTop(props) {
  }, [pathname]);
  return props.children;
 }
-const ScrollToTop = withRouter(_ScrollToTop);
+const Scroll = withRouter(_ScrollToTop);
 
 const App = () => {
  const [loading, setLoading] = useState(true);
@@ -32,7 +33,8 @@ const App = () => {
 
  return (
   <Router>
-   <ScrollToTop>
+   <ScrollToTop smooth color="#bb9d55" />
+   <Scroll>
     <Suspense fallback={<Loader />}>
      {loading ? (
       <Loader />
@@ -44,7 +46,7 @@ const App = () => {
       </>
      )}
     </Suspense>
-   </ScrollToTop>
+   </Scroll>
   </Router>
  );
 };
