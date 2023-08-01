@@ -4,8 +4,8 @@ function Footer() {
  return (
   <FooterWrapp fluid={true}>
    <p>
-    © <strong>🇺🇦 Ostrynska Kateryna</strong> 2022-{new Date().getFullYear()}.
-    All rights are reserved{' '}
+    © <strong>Ostrynska Kateryna🇺🇦</strong> 2022-{new Date().getFullYear()}. All
+    rights are reserved{' '}
    </p>
   </FooterWrapp>
  );
