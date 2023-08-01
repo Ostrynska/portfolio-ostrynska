@@ -128,6 +128,10 @@ export const FormWrapp = styled.div`
  max-width: 100%;
  align-items: flex-end;
  padding-left: 0;
+ margin-bottom: 40px;
+ @media screen and (min-width: 768px) {
+  margin-bottom: 0;
+ }
  @media screen and (min-width: 992px) {
   padding-left: calc((1.5rem * 0.5) * 4);
   width: 58.33333333%;
