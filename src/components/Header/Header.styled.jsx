@@ -68,7 +68,7 @@ export const Open = styled(RxHamburgerMenu)``;
 export const Close = styled(VscClose)``;
 
 export const MenuList = styled.ul`
- padding-top: 43vh;
+ padding-top: 25vh;
  padding-left: 0;
  display: flex !important;
  align-items: center;
@@ -76,11 +76,12 @@ export const MenuList = styled.ul`
  flex-direction: column;
  gap: 60px;
  @media screen and (min-width: 768px) {
-  padding-top: 23vh;
   gap: 20px;
  }
- @media screen and (max-width: 992px) {
-  padding-top: 10vh;
+ ${
+  '' /* @media screen and (min-width: 992px) {
+  padding-top: 25vh;
+ } */
  }
 `;
 
