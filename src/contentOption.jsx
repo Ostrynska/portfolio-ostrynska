@@ -108,7 +108,7 @@ const portfolioData = [
   image:
    'https://res.cloudinary.com/dcjlswtup/image/upload/v1690746585/Screenshot_2023-07-30_at_22.48.43_hrtnpy.png',
   title: 'Vanilla JS Notes App',
-  link: 'note-app-airn.onrender.com/',
+  link: 'https://note-app-airn.onrender.com/',
   git: 'https://github.com/Ostrynska/notes-app',
   category: 'personal',
   id: '9',
