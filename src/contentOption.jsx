@@ -107,14 +107,14 @@ const portfolioData = [
  {
   image:
    'https://res.cloudinary.com/dcjlswtup/image/upload/v1710859311/Screenshot_2024-03-19_at_16.36.22_vzyalj.png',
-  title: 'Medecine Delivery App',
+  title: 'Medecine Delivery',
   link: 'https://ostrynska.github.io/medicine-delivery-app/',
   git: 'https://github.com/Ostrynska/medicine-delivery-app',
   category: 'personal',
   id: '10',
   tools: [react, mongo, api, redux],
   description:
-   'The app is a web-based application that allows users to order medicines delivery. Users can view the list of drug shops and choose a drug store and add medicines to the cart.The order is saved in the Mongo DB database after the user clicks the “submit” button.',
+   'The app is a web-based application that allows users to order medicines delivery. Users can view the list of drug shops, choose it and add medicines to the cart. The order is saved in the Mongo DB database.',
  },
  {
   image:
