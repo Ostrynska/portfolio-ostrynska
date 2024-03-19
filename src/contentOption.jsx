@@ -107,6 +107,18 @@ const portfolioData = [
  {
   image:
    'https://res.cloudinary.com/dcjlswtup/image/upload/v1690746585/Screenshot_2023-07-30_at_22.48.43_hrtnpy.png',
+  title: 'Medecine Delivery App',
+  link: 'https://note-app-airn.onrender.com/',
+  git: 'https://github.com/Ostrynska/notes-app',
+  category: 'personal',
+  id: '9',
+  tools: [html, css, js, bootstrap],
+  description:
+   'A notes taking app made with vanilla javascript. Users can add, edit and remove notes. A list of notes is displayed as a table. Archived notes are not shown in the notes list. Users can view archived notes and unarchive them.',
+ },
+ {
+  image:
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1690746585/Screenshot_2023-07-30_at_22.48.43_hrtnpy.png',
   title: 'Vanilla JS Notes App',
   link: 'https://note-app-airn.onrender.com/',
   git: 'https://github.com/Ostrynska/notes-app',
