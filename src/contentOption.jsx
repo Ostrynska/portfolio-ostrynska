@@ -106,15 +106,15 @@ const customModalStyles = {
 const portfolioData = [
  {
   image:
-   'https://res.cloudinary.com/dcjlswtup/image/upload/v1690746585/Screenshot_2023-07-30_at_22.48.43_hrtnpy.png',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1710859311/Screenshot_2024-03-19_at_16.36.22_vzyalj.png',
   title: 'Medecine Delivery App',
-  link: 'https://note-app-airn.onrender.com/',
-  git: 'https://github.com/Ostrynska/notes-app',
+  link: 'https://ostrynska.github.io/medicine-delivery-app/',
+  git: 'https://github.com/Ostrynska/medicine-delivery-app',
   category: 'personal',
-  id: '9',
-  tools: [html, css, js, bootstrap],
+  id: '10',
+  tools: [react, mongo, api, redux],
   description:
-   'A notes taking app made with vanilla javascript. Users can add, edit and remove notes. A list of notes is displayed as a table. Archived notes are not shown in the notes list. Users can view archived notes and unarchive them.',
+   'The app is a web-based application that allows users to order medicines delivery. Users can view the list of drug shops and choose a drug store and add medicines to the cart.The order is saved in the Mongo DB database after the user clicks the “submit” button.',
  },
  {
   image:
