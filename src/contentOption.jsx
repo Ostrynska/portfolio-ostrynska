@@ -108,6 +108,17 @@ const customModalStyles = {
 const portfolioData = [
  {
   image:
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1715256975/Screenshot_2024-05-09_at_15.04.46_bekvzt.png',
+  title: 'Quiz App',
+  link: 'https://next-quiz-app-nu.vercel.app/',
+  git: 'https://github.com/Ostrynska/next-quiz-app',
+  category: 'personal',
+  id: '11',
+  tools: [next],
+  description: `The app is a quiz application that tests users' knowledge of certain issues.. It's set to transform traditional learning and testing methods, making the process more enjoyable, efficient, and conducive to continuous.`,
+ },
+ {
+  image:
    'https://res.cloudinary.com/dcjlswtup/image/upload/v1710859311/Screenshot_2024-03-19_at_16.36.22_vzyalj.png',
   title: 'Medecine Delivery',
   link: 'https://ostrynska.github.io/medicine-delivery-app/',
