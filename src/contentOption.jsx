@@ -16,6 +16,7 @@ import api from './images/api.png';
 import parcel from './images/parcel.png';
 import mui from './images/mui.png';
 import bootstrap from './images/bootstrap.png';
+import next from './images/next.png';
 
 const meta = {
  title: 'Kateryna Ostrynska',
@@ -66,6 +67,7 @@ const skillsList = [
  { type: 'front', name: css, title: 'CSS', level: 'Intermediate' },
  { type: 'front', name: js, title: 'JavaScript', level: 'Intermediate' },
  { type: 'front', name: react, title: 'React', level: 'Intermediate' },
+ { type: 'front', name: next, title: 'Next', level: 'Intermediate' },
  { type: 'front', name: ts, title: 'TypeScript', level: 'Beginner' },
  { type: 'front', name: reactnative, title: 'ReactNative', level: 'Basic' },
 
