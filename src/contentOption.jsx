@@ -121,7 +121,7 @@ const portfolioData = [
   image:
    'https://res.cloudinary.com/dcjlswtup/image/upload/v1710859311/Screenshot_2024-03-19_at_16.36.22_vzyalj.png',
   title: 'Medecine Delivery',
-  link: 'https://ostrynska.github.io/medicine-delivery-app/',
+  link: 'https://medicine-delivery-app-jtmo.onrender.com',
   git: 'https://github.com/Ostrynska/medicine-delivery-app',
   category: 'personal',
   id: '10',
