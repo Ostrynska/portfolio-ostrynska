@@ -108,14 +108,14 @@ const customModalStyles = {
 const portfolioData = [
  {
   image:
-   'https://res.cloudinary.com/dcjlswtup/image/upload/v1715256975/Screenshot_2024-05-09_at_15.04.46_bekvzt.png',
-  title: 'Recipe App',
+   'https://res.cloudinary.com/dcjlswtup/image/upload/v1728377578/Screenshot_2024-10-08_at_11.52.39_jc5au9.png',
+  title: 'Level Food App',
   link: 'https://level-food.vercel.app/',
   git: 'https://github.com/Ostrynska/level-food',
   category: 'personal',
   id: '12',
   tools: [next],
-  description: `The app is a quiz application that tests users' knowledge of certain issues.. It's set to transform traditional learning and testing methods, making the process more enjoyable, efficient, and conducive to continuous.`,
+  description: `A web application built with Next.js that aims to help people discover and interact with food recipes. Level Food is a place to discover new dishes and to communicate with other food lovers.`,
  },
  {
   image:
