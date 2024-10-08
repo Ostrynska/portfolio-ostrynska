@@ -114,7 +114,7 @@ const portfolioData = [
   git: 'https://github.com/Ostrynska/level-food',
   category: 'personal',
   id: '12',
-  tools: [next],
+  tools: [next, api],
   description: `A web application built with Next.js that aims to help people discover and interact with food recipes. Level Food is a place to discover new dishes and to communicate with other food lovers.`,
  },
  {
